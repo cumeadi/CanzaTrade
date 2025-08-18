@@ -1,0 +1,537 @@
+/* CanzaTrade Design System - Cohesive Theme System */
+
+/* ==========================================================================
+   PART 1: FOUNDATIONAL STYLES
+   ========================================================================== */
+
+/* 1.1 Color Palette - Centralized Theme Variables */
+:root {
+  /* Background Colors */
+  --background-primary: #0A192F;    /* Deep Navy Blue - for main backgrounds */
+  --background-secondary: #172A45;   /* Lighter Navy - for cards, modals, and side panels */
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;          /* White - for primary text */
+  --text-secondary: #8892B0;        /* Light Slate - for secondary text, labels, and inactive elements */
+  
+  /* Accent Colors */
+  --accent-primary: #64FFDA;        /* Vibrant Teal - for primary actions, highlights, and focus indicators */
+  
+  /* System Colors */
+  --system-success: #00BFA5;        /* Green - for positive feedback and profit indicators */
+  --system-error: #FF5252;          /* Red - for error messages and loss indicators */
+  --system-warning: #FFC107;        /* Yellow - for warnings and alerts */
+  
+  /* Additional Semantic Colors */
+  --border-primary: #233554;        /* Border color for cards and components */
+  --border-secondary: #1E3A5F;      /* Lighter border for hover states */
+  --overlay-primary: rgba(10, 25, 47, 0.8);  /* Overlay for modals */
+  --shadow-primary: rgba(10, 25, 47, 0.3);   /* Primary shadow color */
+  
+  /* Interactive States */
+  --hover-primary: rgba(100, 255, 218, 0.1);  /* Hover state for primary elements */
+  --hover-secondary: rgba(136, 146, 176, 0.1); /* Hover state for secondary elements */
+  --focus-ring: rgba(100, 255, 218, 0.4);     /* Focus ring color */
+}
+
+/* 1.2 Typography - Import and Apply Canza's Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Typographic Scale */
+:root {
+  /* Font Families */
+  --font-primary: 'Inter', sans-serif;      /* Primary Font (Headings) */
+  --font-secondary: 'Roboto', sans-serif;   /* Secondary Font (Body) */
+  
+  /* Typographic Scale */
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body: 16px;
+  --font-size-caption: 14px;
+  --font-size-button: 16px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+}
+
+/* ==========================================================================
+   PART 2: COHESIVE COMPONENT STYLES
+   ========================================================================== */
+
+/* 2.1 Button System - Refactored with New Design System */
+.btn {
+  /* Base Button Styles */
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+  
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Accessibility */
+  min-height: 44px; /* Touch target size */
+  outline: none;
+}
+
+/* Primary Button - for "Buy", "Sell", "Confirm" */
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: var(--background-primary);
+  border: none;
+  box-shadow: 0 2px 8px rgba(100, 255, 218, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: rgba(100, 255, 218, 0.8);
+  color: var(--background-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.4);
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(100, 255, 218, 0.3);
+}
+
+/* Secondary Button - for "Cancel", "Close" */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover-primary);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.btn-secondary:active {
+  background-color: rgba(100, 255, 218, 0.2);
+}
+
+/* Tertiary Button - for minor actions, e.g., "View Details" */
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding: 8px 16px;
+  min-height: 36px;
+}
+
+.btn-tertiary:hover {
+  color: var(--accent-primary);
+  background-color: var(--hover-secondary);
+}
+
+.btn-tertiary:focus {
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 18px;
+  min-height: 52px;
+}
+
+/* Button States */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   PART 3: EXTENDED COMPONENT SYSTEM
+   ========================================================================== */
+
+/* 3.1 Typography System */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-extrabold);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-secondary);
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Body Text */
+p, div, span {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Caption Text */
+.caption, small {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+/* 3.2 Form Elements */
+input, select, textarea {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  background-color: rgba(23, 42, 69, 0.8);
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* 3.3 Card System */
+.card {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px var(--shadow-primary);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  border-color: var(--border-secondary);
+  box-shadow: 0 8px 24px var(--shadow-primary);
+  transform: translateY(-2px);
+}
+
+/* 3.4 Trading-Specific Elements */
+.profit {
+  color: var(--system-success);
+  font-weight: var(--font-weight-medium);
+}
+
+.loss {
+  color: var(--system-error);
+  font-weight: var(--font-weight-medium);
+}
+
+.warning {
+  color: var(--system-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 3.5 Status Indicators */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.status.active {
+  background-color: rgba(0, 191, 165, 0.2);
+  color: var(--system-success);
+  border: 1px solid rgba(0, 191, 165, 0.3);
+}
+
+.status.paused {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: var(--system-warning);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.status.stopped {
+  background-color: rgba(255, 82, 82, 0.2);
+  color: var(--system-error);
+  border: 1px solid rgba(255, 82, 82, 0.3);
+}
+
+/* 3.6 Navigation Elements */
+.nav-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover {
+  color: var(--accent-primary);
+  background-color: var(--hover-primary);
+}
+
+.nav-item.active {
+  color: var(--accent-primary);
+  background-color: var(--hover-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 3.7 Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-secondary);
+}
+
+th {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-primary);
+  color: var(--text-primary);
+}
+
+tr:hover {
+  background-color: var(--hover-secondary);
+}
+
+/* 3.8 Modal and Overlay */
+.modal-overlay {
+  background-color: var(--overlay-primary);
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px var(--shadow-primary);
+}
+
+/* 3.9 Loading States */
+.loading {
+  background: linear-gradient(
+    90deg,
+    var(--background-secondary) 25%,
+    var(--border-primary) 50%,
+    var(--background-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ==========================================================================
+   PART 4: RESPONSIVE DESIGN & UTILITIES
+   ========================================================================== */
+
+/* 4.1 Responsive Breakpoints */
+@media (max-width: 1200px) {
+  :root {
+    --font-size-h1: 28px;
+    --font-size-h2: 22px;
+    --font-size-h3: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 24px;
+    --font-size-h2: 20px;
+    --font-size-h3: 16px;
+    --font-size-body: 14px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    min-height: 40px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+}
+
+/* 4.2 Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.font-primary { font-family: var(--font-primary); }
+.font-secondary { font-family: var(--font-secondary); }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-accent { color: var(--accent-primary); }
+
+.bg-primary { background-color: var(--background-primary); }
+.bg-secondary { background-color: var(--background-secondary); }
+
+.border-primary { border-color: var(--border-primary); }
+.border-accent { border-color: var(--accent-primary); }
+
+/* 4.3 Spacing System */
+.spacing-xs { margin: 4px; }
+.spacing-sm { margin: 8px; }
+.spacing-md { margin: 16px; }
+.spacing-lg { margin: 24px; }
+.spacing-xl { margin: 32px; }
+
+.padding-xs { padding: 4px; }
+.padding-sm { padding: 8px; }
+.padding-md { padding: 16px; }
+.padding-lg { padding: 24px; }
+.padding-xl { padding: 32px; }
+
+/* ==========================================================================
+   PART 5: ACCESSIBILITY & PERFORMANCE
+   ========================================================================== */
+
+/* 5.1 Focus States */
+*:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* 5.2 High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --text-secondary: #FFFFFF;
+    --border-primary: #FFFFFF;
+    --background-secondary: #000000;
+  }
+}
+
+/* 5.3 Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 5.4 Print Styles */
+@media print {
+  .card, .btn {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  .btn-primary {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}

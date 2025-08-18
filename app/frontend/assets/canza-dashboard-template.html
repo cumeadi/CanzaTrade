@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanzaTrade Dashboard</title>
+    <link rel="stylesheet" href="canza-trade.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="card" style="margin: 0; border-radius: 0; border-left: none; border-right: none; border-top: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: var(--canza-spacing-md);">
+                <img src="canza-favicon.svg" alt="CanzaTrade Logo" width="40" height="40">
+                <h1 style="margin: 0; color: var(--canza-accent-primary);">CanzaTrade</h1>
+                <span style="color: var(--canza-text-muted); font-size: 0.9rem;">Professional Trading Platform</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--canza-spacing-md);">
+                <span style="color: var(--canza-text-secondary);">Welcome, Trader</span>
+                <button class="btn btn-outline">Settings</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <div class="dashboard-grid">
+        <!-- Left Column - Watchlist & Portfolio -->
+        <div class="left-column">
+            <!-- Portfolio Overview -->
+            <div class="portfolio-overview">
+                <h3 style="margin: 0 0 var(--canza-spacing-sm) 0; color: var(--canza-primary-bg);">Portfolio Value</h3>
+                <div class="portfolio-value">$2,847,392.50</div>
+                <div class="portfolio-change profit">+$45,230.75 (+1.62%)</div>
+            </div>
+
+            <!-- Watchlist -->
+            <div class="watchlist">
+                <h3 style="margin: 0 0 var(--canza-spacing-md) 0;">Watchlist</h3>
+                <div class="watchlist-item">
+                    <div>
+                        <div style="font-weight: 500;">NGN/USDT</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Nigerian Naira</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="profit">₦1,245.67</div>
+                        <div class="profit" style="font-size: 0.8rem;">+2.34%</div>
+                    </div>
+                </div>
+                <div class="watchlist-item">
+                    <div>
+                        <div style="font-weight: 500;">KES/USDT</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Kenyan Shilling</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="loss">₵158.92</div>
+                        <div class="loss" style="font-size: 0.8rem;">-0.87%</div>
+                    </div>
+                </div>
+                <div class="watchlist-item">
+                    <div>
+                        <div style="font-weight: 500;">GHS/USDT</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Ghanaian Cedi</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="profit">₵12.45</div>
+                        <div class="profit" style="font-size: 0.8rem;">+1.12%</div>
+                    </div>
+                </div>
+                <div class="watchlist-item">
+                    <div>
+                        <div style="font-weight: 500;">ZAR/USDT</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">South African Rand</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="neutral">R18.67</div>
+                        <div class="neutral" style="font-size: 0.8rem;">+0.23%</div>
+                    </div>
+                </div>
+                <div class="watchlist-item">
+                    <div>
+                        <div style="font-weight: 500;">EGP/USDT</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Egyptian Pound</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="profit">£31.25</div>
+                        <div class="profit" style="font-size: 0.8rem;">+3.45%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Quick Actions</h4>
+                <div style="display: flex; flex-direction: column; gap: var(--canza-spacing-sm);">
+                    <button class="btn btn-primary">New Bot</button>
+                    <button class="btn btn-secondary">Quick Trade</button>
+                    <button class="btn btn-outline">View Reports</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Column - Chart & Order Entry -->
+        <div class="center-column">
+            <!-- Chart Container -->
+            <div class="chart-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--canza-spacing-md);">
+                    <h3 style="margin: 0;">NGN/USDT Chart</h3>
+                    <div style="display: flex; gap: var(--canza-spacing-sm);">
+                        <button class="btn btn-secondary" style="padding: var(--canza-spacing-xs) var(--canza-spacing-sm);">1H</button>
+                        <button class="btn btn-secondary" style="padding: var(--canza-spacing-xs) var(--canza-spacing-sm);">4H</button>
+                        <button class="btn btn-primary" style="padding: var(--canza-spacing-xs) var(--canza-spacing-sm);">1D</button>
+                        <button class="btn btn-secondary" style="padding: var(--canza-spacing-xs) var(--canza-spacing-sm);">1W</button>
+                    </div>
+                </div>
+                <div style="height: 400px; background: linear-gradient(135deg, var(--canza-secondary-bg), var(--canza-tertiary-bg)); border-radius: var(--canza-radius-md); display: flex; align-items: center; justify-content: center; color: var(--canza-text-muted);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--canza-spacing-md);">📊</div>
+                        <div>Interactive Trading Chart</div>
+                        <div style="font-size: 0.9rem; margin-top: var(--canza-spacing-sm);">Real-time NGN/USDT price data</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Entry -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Order Entry</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--canza-spacing-md);">
+                    <div>
+                        <label style="display: block; margin-bottom: var(--canza-spacing-sm); color: var(--canza-text-secondary);">Order Type</label>
+                        <select style="width: 100%;">
+                            <option>Market Buy</option>
+                            <option>Limit Buy</option>
+                            <option>Market Sell</option>
+                            <option>Limit Sell</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: var(--canza-spacing-sm); color: var(--canza-text-secondary);">Amount (USDT)</label>
+                        <input type="number" placeholder="0.00" style="width: 100%;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: var(--canza-spacing-sm); color: var(--canza-text-secondary);">Price (NGN)</label>
+                        <input type="number" placeholder="1,245.67" style="width: 100%;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: var(--canza-spacing-sm); color: var(--canza-text-secondary);">Total</label>
+                        <input type="text" placeholder="Calculated..." style="width: 100%; background-color: var(--canza-tertiary-bg);" readonly>
+                    </div>
+                </div>
+                <div style="display: flex; gap: var(--canza-spacing-md); margin-top: var(--canza-spacing-md);">
+                    <button class="btn btn-primary" style="flex: 1;">Buy NGN</button>
+                    <button class="btn btn-outline" style="flex: 1;">Sell NGN</button>
+                </div>
+            </div>
+
+            <!-- Market Information -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Market Information</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--canza-spacing-md);">
+                    <div>
+                        <div style="color: var(--canza-text-muted); font-size: 0.9rem;">24h High</div>
+                        <div style="font-weight: 500; font-size: 1.1rem;">₦1,267.89</div>
+                    </div>
+                    <div>
+                        <div style="color: var(--canza-text-muted); font-size: 0.9rem;">24h Low</div>
+                        <div style="font-weight: 500; font-size: 1.1rem;">₦1,198.45</div>
+                    </div>
+                    <div>
+                        <div style="color: var(--canza-text-muted); font-size: 0.9rem;">24h Volume</div>
+                        <div style="font-weight: 500; font-size: 1.1rem;">₦45.2M</div>
+                    </div>
+                    <div>
+                        <div style="color: var(--canza-text-muted); font-size: 0.9rem;">Market Cap</div>
+                        <div style="font-weight: 500; font-size: 1.1rem;">₦2.1T</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Active Bots & Recent Trades -->
+        <div class="right-column">
+            <!-- Active Bots -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Active Bots</h4>
+                <div style="display: flex; flex-direction: column; gap: var(--canza-spacing-md);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--canza-spacing-sm); background-color: var(--canza-secondary-bg); border-radius: var(--canza-radius-md);">
+                        <div>
+                            <div style="font-weight: 500;">NGN Grid Bot</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">NGN/USDT</div>
+                        </div>
+                        <span class="bot-status active">Active</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--canza-spacing-sm); background-color: var(--canza-secondary-bg); border-radius: var(--canza-radius-md);">
+                        <div>
+                            <div style="font-weight: 500;">KES DCA Bot</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">KES/USDT</div>
+                        </div>
+                        <span class="bot-status active">Active</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--canza-spacing-sm); background-color: var(--canza-secondary-bg); border-radius: var(--canza-radius-md);">
+                        <div>
+                            <div style="font-weight: 500;">GHS RSI Bot</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">GHS/USDT</div>
+                        </div>
+                        <span class="bot-status paused">Paused</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--canza-spacing-sm); background-color: var(--canza-secondary-bg); border-radius: var(--canza-radius-md);">
+                        <div>
+                            <div style="font-weight: 500;">ZAR Grid Bot</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">ZAR/USDT</div>
+                        </div>
+                        <span class="bot-status stopped">Stopped</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline" style="width: 100%; margin-top: var(--canza-spacing-md);">View All Bots</button>
+            </div>
+
+            <!-- Recent Trades -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Recent Trades</h4>
+                <div style="display: flex; flex-direction: column; gap: var(--canza-spacing-sm);">
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">NGN/USDT</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">2 min ago</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="trade-amount profit">+₦45,230</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Buy</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">KES/USDT</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">5 min ago</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="trade-amount loss">-₵12,450</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Sell</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">GHS/USDT</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">8 min ago</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="trade-amount profit">+₵8,920</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Buy</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">ZAR/USDT</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">12 min ago</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="trade-amount neutral">+R15,670</div>
+                            <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Buy</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline" style="width: 100%; margin-top: var(--canza-spacing-md);">View All Trades</button>
+            </div>
+
+            <!-- Market Alerts -->
+            <div class="card">
+                <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Market Alerts</h4>
+                <div style="display: flex; flex-direction: column; gap: var(--canza-spacing-sm);">
+                    <div style="padding: var(--canza-spacing-sm); background-color: rgba(0, 212, 170, 0.1); border-left: 3px solid var(--canza-accent-primary); border-radius: var(--canza-radius-sm);">
+                        <div style="font-size: 0.9rem; font-weight: 500;">NGN/USDT above resistance</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Price: ₦1,245.67</div>
+                    </div>
+                    <div style="padding: var(--canza-spacing-sm); background-color: rgba(231, 76, 60, 0.1); border-left: 3px solid var(--canza-loss); border-radius: var(--canza-radius-sm);">
+                        <div style="font-size: 0.9rem; font-weight: 500;">KES/USDT support test</div>
+                        <div style="font-size: 0.8rem; color: var(--canza-text-muted);">Price: ₵158.92</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: var(--canza-spacing-lg); color: var(--canza-text-muted); margin-top: var(--canza-spacing-xl);">
+        <p style="margin: 0;">© 2024 Canza Finance. CanzaTrade - Professional Trading Platform</p>
+        <p style="margin: var(--canza-spacing-sm) 0 0 0; font-size: 0.9rem;">Built for African markets and global traders</p>
+    </footer>
+</body>
+</html>

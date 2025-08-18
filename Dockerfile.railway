@@ -1,0 +1,96 @@
+# CanzaTrade Railway Deployment Dockerfile
+# Optimized for Railway's container platform
+
+#### BASE
+FROM node:18-alpine AS base
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV MOON_TOOLCHAIN_FORCE_GLOBALS=true
+
+WORKDIR /app
+
+# Install moon binary and pnpm
+RUN npm install -g @moonrepo/cli@1.37.2
+RUN npm install -g pnpm
+
+#### SKELETON
+FROM base AS skeleton
+
+# Copy entire repository
+COPY . .
+
+# Copy the minimum of files necessary for installing dependencies
+RUN moon docker scaffold cli
+
+#### BUILD
+FROM base AS build
+
+# Copy toolchain
+COPY --from=skeleton /root/.proto /root/.proto
+
+# Copy workspace skeleton
+COPY --from=skeleton /app/.moon/docker/workspace .
+# Copy Prisma schema
+COPY --from=skeleton /app/.moon/docker/sources/packages/prisma/src/schema.prisma ./packages/prisma/src/schema.prisma
+
+# Install toolchain and dependencies
+RUN moon docker setup
+
+# Copy source files
+COPY --from=skeleton /app/.moon/docker/sources .
+
+# Build the application
+RUN moon run cli:build
+
+# Remove unneeded files and folders
+RUN moon docker prune
+
+#### RUNNER
+FROM node:18-alpine AS runner
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=3000
+
+WORKDIR /app
+
+# Install dumb-init for proper signal handling
+RUN apk add --no-cache dumb-init
+
+# Create non-root user for security
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
+# Copy built application
+COPY --from=build --chown=nextjs:nodejs /app/app ./app
+COPY --from=build --chown=nextjs:nodejs /app/node_modules ./node_modules
+
+# Copy Prisma files
+COPY --from=build --chown=nextjs:nodejs /app/packages/prisma/src/schema.prisma ./packages/prisma/src/schema.prisma
+COPY --from=build --chown=nextjs:nodejs /app/packages/prisma/src/migrations ./packages/prisma/src/migrations
+COPY --from=build --chown=nextjs:nodejs /app/packages/prisma/seed.mjs ./packages/prisma/seed.mjs
+
+# Copy startup scripts
+COPY --chown=nextjs:nodejs bin/railway-start.sh /app/bin/railway-start.sh
+COPY --chown=nextjs:nodejs bin/docker-entry.sh /app/bin/docker-entry.sh
+RUN chmod +x /app/bin/railway-start.sh /app/bin/docker-entry.sh
+
+# Create data directory for SQLite database
+RUN mkdir -p /app/data && chown -R nextjs:nodejs /app/data
+
+# Switch to non-root user
+USER nextjs
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD node -e "require('http').get('http://localhost:3000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })" || exit 1
+
+# Use dumb-init for proper signal handling
+ENTRYPOINT ["dumb-init", "--"]
+
+# Run the Railway startup script
+CMD ["/app/bin/railway-start.sh"]

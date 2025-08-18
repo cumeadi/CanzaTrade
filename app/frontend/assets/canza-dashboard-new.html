@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanzaTrade Dashboard - Design System</title>
+    <link rel="stylesheet" href="canza-theme.css">
+    <link rel="stylesheet" href="canza-components.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="card" style="margin: 0; border-radius: 0; border-left: none; border-right: none; border-top: none;">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-md">
+                <img src="canza-favicon.svg" alt="CanzaTrade Logo" width="40" height="40">
+                <h1 style="margin: 0; color: var(--canza-accent-primary);">CanzaTrade</h1>
+                <span class="caption">Professional Trading Platform</span>
+            </div>
+            <div class="flex items-center gap-md">
+                <span class="text-secondary">Welcome, Trader</span>
+                <button class="btn btn-secondary">Settings</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <div class="container">
+        <div class="grid grid-cols-3 gap-lg" style="padding: var(--canza-spacing-lg) 0;">
+            
+            <!-- Left Column - Watchlist & Portfolio -->
+            <div class="flex flex-col gap-lg">
+                <!-- Portfolio Overview -->
+                <div class="portfolio-card">
+                    <h3 style="margin: 0 0 var(--canza-spacing-sm) 0; color: var(--canza-background-primary);">Portfolio Value</h3>
+                    <div class="portfolio-value">$2,847,392.50</div>
+                    <div class="portfolio-change profit">+$45,230.75 (+1.62%)</div>
+                </div>
+
+                <!-- Watchlist -->
+                <div class="watchlist">
+                    <div class="watchlist-header">
+                        <h3 style="margin: 0;">Watchlist</h3>
+                        <button class="btn btn-tertiary">+ Add</button>
+                    </div>
+                    <div class="watchlist-item">
+                        <div>
+                            <div class="watchlist-pair">NGN/USDT</div>
+                            <div class="watchlist-name">Nigerian Naira</div>
+                        </div>
+                        <div>
+                            <div class="watchlist-price profit">₦1,245.67</div>
+                            <div class="watchlist-change profit">+2.34%</div>
+                        </div>
+                    </div>
+                    <div class="watchlist-item">
+                        <div>
+                            <div class="watchlist-pair">KES/USDT</div>
+                            <div class="watchlist-name">Kenyan Shilling</div>
+                        </div>
+                        <div>
+                            <div class="watchlist-price loss">₵158.92</div>
+                            <div class="watchlist-change loss">-0.87%</div>
+                        </div>
+                    </div>
+                    <div class="watchlist-item">
+                        <div>
+                            <div class="watchlist-pair">GHS/USDT</div>
+                            <div class="watchlist-name">Ghanaian Cedi</div>
+                        </div>
+                        <div>
+                            <div class="watchlist-price profit">₵12.45</div>
+                            <div class="watchlist-change profit">+1.12%</div>
+                        </div>
+                    </div>
+                    <div class="watchlist-item">
+                        <div>
+                            <div class="watchlist-pair">ZAR/USDT</div>
+                            <div class="watchlist-name">South African Rand</div>
+                        </div>
+                        <div>
+                            <div class="watchlist-price warning">R18.67</div>
+                            <div class="watchlist-change warning">+0.23%</div>
+                        </div>
+                    </div>
+                    <div class="watchlist-item">
+                        <div>
+                            <div class="watchlist-pair">EGP/USDT</div>
+                            <div class="watchlist-name">Egyptian Pound</div>
+                        </div>
+                        <div>
+                            <div class="watchlist-price profit">£31.25</div>
+                            <div class="watchlist-change profit">+3.45%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <h4 style="margin: 0 0 var(--canza-spacing-md) 0;">Quick Actions</h4>
+                    <div class="flex flex-col gap-sm">
+                        <button class="btn btn-primary">New Bot</button>
+                        <button class="btn btn-secondary">Quick Trade</button>
+                        <button class="btn btn-tertiary">View Reports</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Column - Chart & Order Entry -->
+            <div class="flex flex-col gap-lg">
+                <!-- Chart Container -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3 style="margin: 0;">NGN/USDT Chart</h3>
+                        <div class="chart-timeframes">
+                            <button class="timeframe-btn">1H</button>
+                            <button class="timeframe-btn">4H</button>
+                            <button class="timeframe-btn active">1D</button>
+                            <button class="timeframe-btn">1W</button>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="chart-placeholder-icon">📊</div>
+                        <div>Interactive Trading Chart</div>
+                        <div class="caption">Real-time NGN/USDT price data</div>
+                    </div>
+                </div>
+
+                <!-- Order Entry -->
+                <div class="order-entry">
+                    <div class="order-entry-header">
+                        <h4 style="margin: 0;">Order Entry</h4>
+                    </div>
+                    <div class="order-form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Order Type</label>
+                            <select class="form-input">
+                                <option>Market Buy</option>
+                                <option>Limit Buy</option>
+                                <option>Market Sell</option>
+                                <option>Limit Sell</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Amount (USDT)</label>
+                            <input type="number" class="form-input" placeholder="0.00">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Price (NGN)</label>
+                            <input type="number" class="form-input" placeholder="1,245.67">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Total</label>
+                            <input type="text" class="form-input" placeholder="Calculated..." readonly>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="btn btn-primary">Buy NGN</button>
+                        <button class="btn btn-secondary">Sell NGN</button>
+                    </div>
+                </div>
+
+                <!-- Market Information -->
+                <div class="market-info">
+                    <div class="market-info-header">
+                        <h4 style="margin: 0;">Market Information</h4>
+                    </div>
+                    <div class="market-info-grid">
+                        <div class="market-info-item">
+                            <div class="market-info-label">24h High</div>
+                            <div class="market-info-value">₦1,267.89</div>
+                        </div>
+                        <div class="market-info-item">
+                            <div class="market-info-label">24h Low</div>
+                            <div class="market-info-value">₦1,198.45</div>
+                        </div>
+                        <div class="market-info-item">
+                            <div class="market-info-label">24h Volume</div>
+                            <div class="market-info-value">₦45.2M</div>
+                        </div>
+                        <div class="market-info-item">
+                            <div class="market-info-label">Market Cap</div>
+                            <div class="market-info-value">₦2.1T</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Active Bots & Recent Trades -->
+            <div class="flex flex-col gap-lg">
+                <!-- Active Bots -->
+                <div class="bot-list">
+                    <div class="bot-list-header">
+                        <h4 style="margin: 0;">Active Bots</h4>
+                    </div>
+                    <div class="bot-item">
+                        <div class="bot-info">
+                            <div class="bot-name">NGN Grid Bot</div>
+                            <div class="bot-pair">NGN/USDT</div>
+                        </div>
+                        <span class="bot-status active">Active</span>
+                    </div>
+                    <div class="bot-item">
+                        <div class="bot-info">
+                            <div class="bot-name">KES DCA Bot</div>
+                            <div class="bot-pair">KES/USDT</div>
+                        </div>
+                        <span class="bot-status active">Active</span>
+                    </div>
+                    <div class="bot-item">
+                        <div class="bot-info">
+                            <div class="bot-name">GHS RSI Bot</div>
+                            <div class="bot-pair">GHS/USDT</div>
+                        </div>
+                        <span class="bot-status paused">Paused</span>
+                    </div>
+                    <div class="bot-item">
+                        <div class="bot-info">
+                            <div class="bot-name">ZAR Grid Bot</div>
+                            <div class="bot-pair">ZAR/USDT</div>
+                        </div>
+                        <span class="bot-status stopped">Stopped</span>
+                    </div>
+                    <button class="btn btn-tertiary" style="width: 100%; margin-top: var(--canza-spacing-md);">View All Bots</button>
+                </div>
+
+                <!-- Recent Trades -->
+                <div class="trades-list">
+                    <div class="trades-list-header">
+                        <h4 style="margin: 0;">Recent Trades</h4>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">NGN/USDT</div>
+                            <div class="trade-time">2 min ago</div>
+                        </div>
+                        <div>
+                            <div class="trade-amount profit">+₦45,230</div>
+                            <div class="trade-type">Buy</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">KES/USDT</div>
+                            <div class="trade-time">5 min ago</div>
+                        </div>
+                        <div>
+                            <div class="trade-amount loss">-₵12,450</div>
+                            <div class="trade-type">Sell</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">GHS/USDT</div>
+                            <div class="trade-time">8 min ago</div>
+                        </div>
+                        <div>
+                            <div class="trade-amount profit">+₵8,920</div>
+                            <div class="trade-type">Buy</div>
+                        </div>
+                    </div>
+                    <div class="trade-item">
+                        <div>
+                            <div class="trade-pair">ZAR/USDT</div>
+                            <div class="trade-time">12 min ago</div>
+                        </div>
+                        <div>
+                            <div class="trade-amount warning">+R15,670</div>
+                            <div class="trade-type">Buy</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-tertiary" style="width: 100%; margin-top: var(--canza-spacing-md);">View All Trades</button>
+                </div>
+
+                <!-- Market Alerts -->
+                <div class="alerts-list">
+                    <div class="alerts-list-header">
+                        <h4 style="margin: 0;">Market Alerts</h4>
+                    </div>
+                    <div class="alert-item info">
+                        <div class="alert-message">NGN/USDT above resistance</div>
+                        <div class="alert-details">Price: ₦1,245.67</div>
+                    </div>
+                    <div class="alert-item warning">
+                        <div class="alert-message">KES/USDT support test</div>
+                        <div class="alert-details">Price: ₵158.92</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: var(--canza-spacing-lg); color: var(--canza-text-secondary); margin-top: var(--canza-spacing-xl);">
+        <p style="margin: 0;">© 2024 Canza Finance. CanzaTrade - Professional Trading Platform</p>
+        <p style="margin: var(--canza-spacing-sm) 0 0 0; font-size: 0.9rem;">Built for African markets and global traders</p>
+    </footer>
+
+    <!-- Demo Script to Show Design System in Action -->
+    <script>
+        // Demo functionality for the new design system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Timeframe button interactions
+            const timeframeBtns = document.querySelectorAll('.timeframe-btn');
+            timeframeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    timeframeBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Form input calculations
+            const amountInput = document.querySelector('input[placeholder="0.00"]');
+            const priceInput = document.querySelector('input[placeholder="1,245.67"]');
+            const totalInput = document.querySelector('input[readonly]');
+
+            function calculateTotal() {
+                const amount = parseFloat(amountInput.value) || 0;
+                const price = parseFloat(priceInput.value.replace(/,/g, '')) || 0;
+                const total = amount * price;
+                
+                if (total > 0) {
+                    totalInput.value = `₦${total.toLocaleString('en-NG', { minimumFractionDigits: 2 })}`;
+                } else {
+                    totalInput.value = 'Calculated...';
+                }
+            }
+
+            if (amountInput && priceInput && totalInput) {
+                amountInput.addEventListener('input', calculateTotal);
+                priceInput.addEventListener('input', calculateTotal);
+            }
+
+            // Add loading states to buttons
+            const primaryBtn = document.querySelector('.btn-primary');
+            if (primaryBtn) {
+                primaryBtn.addEventListener('click', function() {
+                    this.classList.add('loading');
+                    setTimeout(() => {
+                        this.classList.remove('loading');
+                    }, 2000);
+                });
+            }
+
+            // Simulate live data updates
+            setInterval(() => {
+                const portfolioValue = document.querySelector('.portfolio-value');
+                if (portfolioValue) {
+                    const currentValue = parseFloat(portfolioValue.textContent.replace(/[$,]/g, ''));
+                    const change = (Math.random() - 0.5) * 1000;
+                    const newValue = currentValue + change;
+                    portfolioValue.textContent = `$${newValue.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+                }
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
