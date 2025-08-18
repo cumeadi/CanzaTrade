@@ -1,4 +1,4 @@
-import { XOrderStatus } from "@opentrader/types";
+import { XOrderStatus } from "@canzatrade/types";
 import type { PrismaClient } from "@prisma/client";
 
 export const orderModel = (prisma: PrismaClient) => ({

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 import type { DecomposeSymbolIdResult } from "./decomposeSymbolId.js";
 import { decomposeSymbolId } from "./decomposeSymbolId.js";
 

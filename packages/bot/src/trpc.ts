@@ -1,12 +1,12 @@
 import { type CreateFastifyContextOptions } from "@trpc/server/adapters/fastify";
 
-import { trpc, appRouter, type Context } from "@opentrader/trpc";
+import { trpc, appRouter, type Context } from "@canzatrade/trpc";
 
 const ctx = {
   user: {
     id: 1,
-    email: "onboarding@opentrader.pro",
-    displayName: "OpenTrader",
+    email: "onboarding.canzatrade.pro",
+    displayName: "CanzaTrade",
     role: "Admin" as const,
   },
 };

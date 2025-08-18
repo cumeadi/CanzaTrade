@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { buy, cancelSmartTrade, IBotConfiguration, sell, TBotContext, useRSI } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { buy, cancelSmartTrade, IBotConfiguration, sell, TBotContext, useRSI } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 /**
  * Inspired by https://github.com/askmike/gekko/blob/develop/strategies/RSI.js

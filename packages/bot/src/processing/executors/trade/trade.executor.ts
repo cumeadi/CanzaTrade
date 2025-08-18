@@ -1,12 +1,12 @@
-import { xprisma } from "@opentrader/db";
-import type { SmartTradeWithOrders, ExchangeAccountWithCredentials } from "@opentrader/db";
-import type { IExchange } from "@opentrader/exchanges";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
-import { ITicker, XEntityType } from "@opentrader/types";
+import { xprisma } from "@canzatrade/db";
+import type { SmartTradeWithOrders, ExchangeAccountWithCredentials } from "@canzatrade/db";
+import type { IExchange } from "@canzatrade/exchanges";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
+import { ITicker, XEntityType } from "@canzatrade/types";
 import type { ISmartTradeExecutor, SmartTradeContext } from "../smart-trade-executor.interface.js";
 import { OrderExecutor } from "../order/order.executor.js";
-import { decomposeSymbol } from "@opentrader/tools";
+import { decomposeSymbol } from "@canzatrade/tools";
 
 export class TradeExecutor implements ISmartTradeExecutor {
   smartTrade: SmartTradeWithOrders;

@@ -1,5 +1,5 @@
 import type { EventEmitter } from "node:events";
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 
 export interface ICandlesProvider extends EventEmitter {
   /**

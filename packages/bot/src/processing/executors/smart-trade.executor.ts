@@ -1,7 +1,7 @@
-import type { ExchangeAccountWithCredentials, SmartTradeWithOrders } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { XSmartTradeType } from "@opentrader/types";
+import type { ExchangeAccountWithCredentials, SmartTradeWithOrders } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { XSmartTradeType } from "@canzatrade/types";
 import type { ISmartTradeExecutor } from "./smart-trade-executor.interface.js";
 import { TradeExecutor } from "./trade/trade.executor.js";
 import { ArbExecutor } from "./arb/arb.executor.js";

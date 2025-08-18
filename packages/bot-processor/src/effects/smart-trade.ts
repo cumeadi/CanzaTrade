@@ -1,4 +1,4 @@
-import type { XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import type { XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 import type { Trade } from "../types/index.js";
 import {
   GET_SMART_TRADE,

@@ -1,4 +1,4 @@
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import { checkExchangeCredentials } from "../../../../utils/exchange-account.js";
 import type { Context } from "../../../../utils/context.js";
 import type { TCheckExchangeAccountInputSchema } from "./schema.js";

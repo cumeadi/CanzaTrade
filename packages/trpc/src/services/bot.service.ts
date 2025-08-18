@@ -1,5 +1,5 @@
-import type { TBotWithExchangeAccount } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
+import type { TBotWithExchangeAccount } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
 import { TRPCError } from "@trpc/server";
 
 export class BotService {

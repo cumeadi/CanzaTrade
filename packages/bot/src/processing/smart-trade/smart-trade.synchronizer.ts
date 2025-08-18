@@ -1,12 +1,12 @@
-import { exchangeProvider, type IExchange } from "@opentrader/exchanges";
+import { exchangeProvider, type IExchange } from "@canzatrade/exchanges";
 import type {
   ExchangeAccountWithCredentials,
   OrderEntity,
   SmartTradeEntity_Order_Order,
   SmartTradeWithOrders,
-} from "@opentrader/db";
-import { assertIsOrderBased, toSmartTradeEntity, xprisma } from "@opentrader/db";
-import type { IGetLimitOrderResponse } from "@opentrader/types";
+} from "@canzatrade/db";
+import { assertIsOrderBased, toSmartTradeEntity, xprisma } from "@canzatrade/db";
+import type { IGetLimitOrderResponse } from "@canzatrade/types";
 import { OrderNotFound } from "ccxt";
 
 type SyncParams = {

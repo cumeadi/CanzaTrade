@@ -1,6 +1,6 @@
 import type { RuleGroupType } from "react-querybuilder";
 
-import { IndicatorValue, TIndicatorName, TIndicatorOptions } from "@opentrader/types";
+import { IndicatorValue, TIndicatorName, TIndicatorOptions } from "@canzatrade/types";
 
 export const isGroup = (rule: any): rule is RuleGroupType => {
   return !!rule?.rules;

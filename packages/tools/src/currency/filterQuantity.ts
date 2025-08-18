@@ -1,4 +1,4 @@
-import type { ISymbolFilter } from "@opentrader/types";
+import type { ISymbolFilter } from "@canzatrade/types";
 import Big from "big.js";
 import { countDecimalPlaces } from "./common/countDecimalPlaces.js";
 

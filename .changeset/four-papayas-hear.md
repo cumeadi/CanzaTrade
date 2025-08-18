@@ -1,5 +1,5 @@
 ---
-"opentrader": minor
+"canzatrade": minor
 "frontend": minor
 "processor": minor
 ---

@@ -1,4 +1,4 @@
-import type { BarSize } from "@opentrader/types";
+import type { BarSize } from "@canzatrade/types";
 import { barSizeToDuration } from "./barSizeToDuration.js";
 
 /**

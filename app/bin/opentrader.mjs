@@ -9,7 +9,7 @@ import { homedir } from "node:os";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const APP_DIR = ".opentrader";
+const APP_DIR = ".canzatrade";
 export const appPath = join(homedir(), APP_DIR);
 
 // Path to the file containing the admin password

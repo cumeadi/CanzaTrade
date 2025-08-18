@@ -1,5 +1,5 @@
-import type { OrderWithSmartTrade, SmartTradeWithOrders } from "@opentrader/db";
-import { ITicker } from "@opentrader/types";
+import type { OrderWithSmartTrade, SmartTradeWithOrders } from "@canzatrade/db";
+import { ITicker } from "@canzatrade/types";
 
 export type SmartTradeContext = {
   ticker?: ITicker;

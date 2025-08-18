@@ -1,11 +1,11 @@
 import { EventEmitter } from "node:events";
-import type { TBotWithExchangeAccount } from "@opentrader/db";
-import { findStrategy } from "@opentrader/bot-templates/server";
+import type { TBotWithExchangeAccount } from "@canzatrade/db";
+import { findStrategy } from "@canzatrade/bot-templates/server";
 import { getWatchers } from "../processing/index.js";
-import { decomposeSymbolId } from "@opentrader/tools";
-import { ExchangeCode } from "@opentrader/types";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
+import { decomposeSymbolId } from "@canzatrade/tools";
+import { ExchangeCode } from "@canzatrade/types";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
 import { TradesChannel, type TradeEvent } from "../channels/index.js";
 
 class TradesRegistry {

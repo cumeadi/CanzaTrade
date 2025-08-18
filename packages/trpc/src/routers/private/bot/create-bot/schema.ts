@@ -1,4 +1,4 @@
-import { ZBot } from "@opentrader/db";
+import { ZBot } from "@canzatrade/db";
 import { z } from "zod";
 
 export const ZCreateBotInputSchema = z.object({

@@ -1,5 +1,5 @@
-import { xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
+import { xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
 import { Bot } from "./bot.js";
 import { MarketsStream } from "./streams/markets.stream.js";
 import { OrdersStream } from "./streams/orders.stream.js";

@@ -1,7 +1,7 @@
 ---
-"opentrader": patch
+"canzatrade": patch
 "frontend": patch
 "processor": patch
 ---
 
-fix(opentrader.mjs): use `homedir()` instead `HOME` env (Windows issue)
+fix(canzatrade.mjs): use `homedir()` instead `HOME` env (Windows issue)

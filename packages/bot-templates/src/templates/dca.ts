@@ -1,7 +1,7 @@
-import { evaluateConditions, extractIndicators, IndicatorsValues, requiredHistory } from "@opentrader/tools";
+import { evaluateConditions, extractIndicators, IndicatorsValues, requiredHistory } from "@canzatrade/tools";
 import { z } from "zod";
-import { logger } from "@opentrader/logger";
-import { BarSize, ZDcaBotSettings } from "@opentrader/types";
+import { logger } from "@canzatrade/logger";
+import { BarSize, ZDcaBotSettings } from "@canzatrade/types";
 import {
   useDca,
   cancelSmartTrade,
@@ -10,7 +10,7 @@ import {
   BotTemplate,
   useIndicators,
   type SmartTradeService,
-} from "@opentrader/bot-processor";
+} from "@canzatrade/bot-processor";
 
 export function* dca(ctx: TBotContext<DCABotConfig>) {
   const { config, onStart, onStop } = ctx;

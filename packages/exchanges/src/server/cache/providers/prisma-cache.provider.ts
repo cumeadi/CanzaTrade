@@ -1,6 +1,6 @@
 import type { Dictionary, Market } from "ccxt";
-import type { ExchangeCode } from "@opentrader/types";
-import { xprisma } from "@opentrader/db";
+import type { ExchangeCode } from "@canzatrade/types";
+import { xprisma } from "@canzatrade/db";
 import type { ICacheProvider } from "../../../types/cache/cache-provider.interface.js";
 import type { IExchange } from "../../../types/exchange.interface.js";
 

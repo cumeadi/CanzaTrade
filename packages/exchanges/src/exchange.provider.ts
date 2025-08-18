@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { ExchangeAccountWithCredentials } from "@opentrader/db";
-import type { ExchangeCode } from "@opentrader/types";
+import type { ExchangeAccountWithCredentials } from "@canzatrade/db";
+import type { ExchangeCode } from "@canzatrade/types";
 import { exchanges } from "./exchanges/index.js";
 import type { IExchange } from "./types/index.js";
 

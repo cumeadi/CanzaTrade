@@ -1,4 +1,4 @@
-import type { BarSize, ExchangeCode, ICandlestick, MarketId } from "@opentrader/types";
+import type { BarSize, ExchangeCode, ICandlestick, MarketId } from "@canzatrade/types";
 
 export type CandleEvent = {
   exchangeCode: ExchangeCode;

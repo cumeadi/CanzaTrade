@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { IBotConfiguration, StrategyRunner, BotTemplate, BotState } from "@opentrader/bot-processor";
-import { createStrategyRunner } from "@opentrader/bot-processor";
-import type { ICandlestick } from "@opentrader/types";
-import { logger, format } from "@opentrader/logger";
+import type { IBotConfiguration, StrategyRunner, BotTemplate, BotState } from "@canzatrade/bot-processor";
+import { createStrategyRunner } from "@canzatrade/bot-processor";
+import type { ICandlestick } from "@canzatrade/types";
+import { logger, format } from "@canzatrade/logger";
 import { BacktestingReport } from "./backtesting-report.js";
 import { MarketSimulator } from "./market-simulator.js";
 import { MemoryExchange } from "./exchange/memory-exchange.js";

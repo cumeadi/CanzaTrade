@@ -1,4 +1,4 @@
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { existsSync, readFileSync, createReadStream, watchFile } from "fs";
 import { createInterface } from "readline";
 import { prettyLog } from "../utils/pretty-log.js";

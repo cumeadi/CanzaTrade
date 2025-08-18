@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { logger } from "@opentrader/logger";
-import { BarSize } from "@opentrader/types";
+import { logger } from "@canzatrade/logger";
+import { BarSize } from "@canzatrade/types";
 import {
   cancelSmartTrade,
   IBotConfiguration,
@@ -8,8 +8,8 @@ import {
   BotTemplate,
   all,
   useExchange,
-} from "@opentrader/bot-processor";
-import { IExchange } from "@opentrader/exchanges";
+} from "@canzatrade/bot-processor";
+import { IExchange } from "@canzatrade/exchanges";
 
 export function* testAllEffect(ctx: TBotContext<BotConfig>) {
   const { config, onStart, onStop } = ctx;

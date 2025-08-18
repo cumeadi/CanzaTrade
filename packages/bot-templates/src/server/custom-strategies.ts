@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
-import { BotTemplate } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { BotTemplate } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 // Storage for saving custom strategies
 export const customStrategies: Record<string, BotTemplate<any>> = {};

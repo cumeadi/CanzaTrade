@@ -1,4 +1,4 @@
-import { XOrderStatus } from "@opentrader/types";
+import { XOrderStatus } from "@canzatrade/types";
 import { z } from "zod";
 
 export const ZGetClosedOrdersInputSchema = z.object({

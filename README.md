@@ -5,7 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-> **CanzaTrade** is a professional, African market-focused trading platform built on the robust OpenTrader foundation. Experience seamless trading with our modern design system and enterprise-grade infrastructure.
+> **CanzaTrade** is a professional, African market-focused trading platform built on the robust CanzaTrade foundation. Experience seamless trading with our modern design system and enterprise-grade infrastructure.
 
 ## ✨ Features
 
@@ -275,7 +275,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 🎉 Acknowledgments
 
-- **OpenTrader Foundation**: Built on the robust OpenTrader platform
+- **CanzaTrade Foundation**: Built on the robust CanzaTrade platform
 - **Canza Finance**: Brand identity and design inspiration
 - **Railway**: Deployment platform and infrastructure
 - **Open Source Community**: All the amazing tools and libraries

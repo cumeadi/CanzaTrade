@@ -1,5 +1,5 @@
-import { ExchangeCode } from "@opentrader/types";
-import { logger } from "@opentrader/logger";
+import { ExchangeCode } from "@canzatrade/types";
+import { logger } from "@canzatrade/logger";
 import type { CommandResult } from "../../types.js";
 import { createDaemonRpcClient } from "../../daemon-rpc.js";
 

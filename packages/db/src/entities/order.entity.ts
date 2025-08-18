@@ -1,4 +1,4 @@
-import { XOrderStatus, XOrderType } from "@opentrader/types";
+import { XOrderStatus, XOrderType } from "@canzatrade/types";
 import type { Order as OrderModel } from "@prisma/client";
 
 type GenericOrderProps = "type" | "status" | "price" | "relativePrice" | "filledPrice" | "filledAt" | "placedAt";

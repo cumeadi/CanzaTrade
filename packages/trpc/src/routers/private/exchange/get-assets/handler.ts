@@ -1,5 +1,5 @@
-import { exchangeProvider } from "@opentrader/exchanges";
-import { xprisma } from "@opentrader/db";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { xprisma } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetExchangeAssetsSchema } from "./schema.js";
 

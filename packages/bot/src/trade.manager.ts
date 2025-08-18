@@ -1,6 +1,6 @@
-import { SmartTradeWithOrders, xprisma } from "@opentrader/db";
-import { eventBus } from "@opentrader/event-bus";
-import { logger } from "@opentrader/logger";
+import { SmartTradeWithOrders, xprisma } from "@canzatrade/db";
+import { eventBus } from "@canzatrade/event-bus";
+import { logger } from "@canzatrade/logger";
 import { OrdersStream } from "./streams/orders.stream.js";
 import { Trade } from "./trade.js";
 

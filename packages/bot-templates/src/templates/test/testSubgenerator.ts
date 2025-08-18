@@ -1,8 +1,8 @@
 import { z } from "zod";
-import { useExchange, type TBotContext } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
-import { IExchange } from "@opentrader/exchanges";
-import { IAccountAsset } from "@opentrader/types";
+import { useExchange, type TBotContext } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
+import { IExchange } from "@canzatrade/exchanges";
+import { IAccountAsset } from "@canzatrade/types";
 
 export function* testSubgenerator(ctx: TBotContext<any>) {
   if (ctx.onStart) {

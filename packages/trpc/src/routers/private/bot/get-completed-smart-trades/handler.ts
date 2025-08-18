@@ -1,6 +1,6 @@
-import type { SmartTradeEntity_Order_Order } from "@opentrader/db";
-import { toSmartTradeEntity, xprisma } from "@opentrader/db";
-import { XEntityType, XOrderStatus } from "@opentrader/types";
+import type { SmartTradeEntity_Order_Order } from "@canzatrade/db";
+import { toSmartTradeEntity, xprisma } from "@canzatrade/db";
+import { XEntityType, XOrderStatus } from "@canzatrade/types";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetCompletedSmartTradesInputSchema } from "./schema.js";
 

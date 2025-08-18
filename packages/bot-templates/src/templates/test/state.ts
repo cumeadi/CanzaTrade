@@ -1,6 +1,6 @@
 import { z } from "zod";
-import type { TBotContext } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import type { TBotContext } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testState(ctx: TBotContext<any>) {
   const { config: bot, onStart, onStop } = ctx;

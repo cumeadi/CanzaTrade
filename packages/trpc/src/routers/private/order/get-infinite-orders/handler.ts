@@ -1,4 +1,4 @@
-import { toOrderEntity, toSmartTradeEntity, xprisma } from "@opentrader/db";
+import { toOrderEntity, toSmartTradeEntity, xprisma } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetInfiniteOrdersInputSchema } from "./schema.js";
 

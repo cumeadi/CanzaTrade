@@ -1,5 +1,5 @@
 import big from "big.js";
-import type { IGridLine } from "@opentrader/types";
+import type { IGridLine } from "@canzatrade/types";
 import { calcGridStepSize } from "./calcGridStepSize.js";
 
 // Note: Use this function only for tests purposes

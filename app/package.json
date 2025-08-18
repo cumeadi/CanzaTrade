@@ -1,5 +1,5 @@
 {
-  "name": "opentrader",
+  "name": "canzatrade",
   "version": "1.0.0-beta.29",
   "description": "OpenTrader is a powerful open-source crypto trading bot designated to automate your trading strategies on various cryptocurrency exchanges.",
   "keywords": [
@@ -20,21 +20,21 @@
     ".": "./dist/main.mjs"
   },
   "bin": {
-    "opentrader": "./bin/opentrader.mjs"
+    "canzatrade": "./bin/canzatrade.mjs"
   },
   "author": "bludnic",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bludnic/opentrader.git"
+    "url": "git+https://github.com/bludnic/canzatrade.git"
   },
   "bugs": {
-    "url": "https://github.com/bludnic/opentrader/issues"
+    "url": "https://github.com/bludnic/canzatrade/issues"
   },
-  "homepage": "https://github.com/bludnic/opentrader#readme",
+  "homepage": "https://github.com/bludnic/canzatrade#readme",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "@types/express": "^4.17.21",
     "@types/node": "^22.10.2",
     "dts-bundle-generator": "^9.5.1",
@@ -46,15 +46,15 @@
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@opentrader/backtesting": "workspace:*",
-    "@opentrader/bot": "workspace:*",
-    "@opentrader/bot-processor": "workspace:*",
-    "@opentrader/bot-templates": "workspace:*",
-    "@opentrader/db": "workspace:*",
-    "@opentrader/exchanges": "workspace:*",
-    "@opentrader/logger": "workspace:*",
-    "@opentrader/tools": "workspace:*",
-    "@opentrader/trpc": "workspace:*",
+    "@canzatrade/backtesting": "workspace:*",
+    "@canzatrade/bot": "workspace:*",
+    "@canzatrade/bot-processor": "workspace:*",
+    "@canzatrade/bot-templates": "workspace:*",
+    "@canzatrade/db": "workspace:*",
+    "@canzatrade/exchanges": "workspace:*",
+    "@canzatrade/logger": "workspace:*",
+    "@canzatrade/tools": "workspace:*",
+    "@canzatrade/trpc": "workspace:*",
     "@prisma/client": "6.9.0",
     "@trpc/client": "^11.4.1",
     "@trpc/server": "^11.4.1",

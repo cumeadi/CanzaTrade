@@ -1,5 +1,5 @@
 import type { Order } from "ccxt";
-import type { OrderStatus } from "@opentrader/types";
+import type { OrderStatus } from "@canzatrade/types";
 
 export function normalizeOrderStatus(
   order: Pick<Order, "filled" | "amount" | "status">,

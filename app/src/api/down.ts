@@ -1,4 +1,4 @@
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { CommandResult } from "../types.js";
 import { getPid, clearPid } from "../utils/pid.js";
 
@@ -10,7 +10,7 @@ export async function down(options: Options): Promise<CommandResult> {
   const pid = getPid();
 
   if (!pid) {
-    logger.warn("OpenTrader already stopped.");
+    logger.warn("CanzaTrade already stopped.");
     return {
       result: undefined,
     };
@@ -19,13 +19,13 @@ export async function down(options: Options): Promise<CommandResult> {
   try {
     if (options.force) {
       process.kill(pid, "SIGKILL");
-      logger.info(`OpenTrader has been forcefully stopped [PID: ${[pid]}]`);
+      logger.info(`CanzaTrade has been forcefully stopped [PID: ${[pid]}]`);
     } else {
       process.kill(pid, "SIGTERM");
-      logger.warn(`OpenTrader has been gracefully stopped [PID: ${[pid]}]`);
+      logger.warn(`CanzaTrade has been gracefully stopped [PID: ${[pid]}]`);
     }
   } catch (err) {
-    logger.warn(`Failed to stop OpenTrader process [PID: ${pid}]. Retry with: opentrader down --force`);
+    logger.warn(`Failed to stop CanzaTrade process [PID: ${pid}]. Retry with: canzatrade down --force`);
     logger.error(err);
   }
 

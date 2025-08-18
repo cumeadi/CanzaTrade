@@ -1,12 +1,12 @@
 {
-  "extends": "@opentrader/tsconfig/esm.json",
+  "extends": "@canzatrade/tsconfig/esm.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/logger",
     "paths": {
-      "@opentrader/tsconfig/*": ["../tsconfig/*"],
-      "@opentrader/types": ["../types/src/index.ts"],
-      "@opentrader/types/*": ["../types/src/*"]
+      "@canzatrade/tsconfig/*": ["../tsconfig/*"],
+      "@canzatrade/types": ["../types/src/index.ts"],
+      "@canzatrade/types/*": ["../types/src/*"]
     }
   },
   "include": ["src/**/*"],

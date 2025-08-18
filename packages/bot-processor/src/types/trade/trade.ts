@@ -1,4 +1,4 @@
-import { XSmartTradeType } from "@opentrader/types";
+import { XSmartTradeType } from "@canzatrade/types";
 import { Order } from "./order.js";
 
 interface BaseTrade<T extends XSmartTradeType> {

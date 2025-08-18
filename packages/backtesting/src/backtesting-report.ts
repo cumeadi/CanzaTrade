@@ -1,8 +1,8 @@
 import { table } from "table";
-import type { BotTemplate, IBotConfiguration, Order, Trade } from "@opentrader/bot-processor";
-import { ICandlestick, XOrderStatus } from "@opentrader/types";
-import { format } from "@opentrader/logger";
-import { decomposeSymbol } from "@opentrader/tools";
+import type { BotTemplate, IBotConfiguration, Order, Trade } from "@canzatrade/bot-processor";
+import { ICandlestick, XOrderStatus } from "@canzatrade/types";
+import { format } from "@canzatrade/logger";
+import { decomposeSymbol } from "@canzatrade/tools";
 import { buyOrder } from "./report/buyOrder.js";
 import { buyTransaction } from "./report/buyTransaction.js";
 import { sellOrder } from "./report/sellOrder.js";

@@ -1,8 +1,8 @@
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import { checkExchangeCredentials } from "../../../../utils/exchange-account.js";
 import type { Context } from "../../../../utils/context.js";
 import type { TUpdateExchangeAccountInputSchema } from "./schema.js";
-import { eventBus } from "@opentrader/event-bus";
+import { eventBus } from "@canzatrade/event-bus";
 
 type Options = {
   ctx: {

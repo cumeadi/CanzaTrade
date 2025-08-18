@@ -1,10 +1,10 @@
 import { z } from "zod";
-import type { IExchange } from "@opentrader/exchanges";
-import type { IBotConfiguration, SmartTradeService, TBotContext } from "@opentrader/bot-processor";
-import { cancelSmartTrade, useExchange, useSmartTrade } from "@opentrader/bot-processor";
-import { computeGridLevelsFromCurrentAssetPrice, decomposeSymbol } from "@opentrader/tools";
-import { ZGridBotSettings, type IGetMarketPriceResponse } from "@opentrader/types";
-import { logger } from "@opentrader/logger";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { IBotConfiguration, SmartTradeService, TBotContext } from "@canzatrade/bot-processor";
+import { cancelSmartTrade, useExchange, useSmartTrade } from "@canzatrade/bot-processor";
+import { computeGridLevelsFromCurrentAssetPrice, decomposeSymbol } from "@canzatrade/tools";
+import { ZGridBotSettings, type IGetMarketPriceResponse } from "@canzatrade/types";
+import { logger } from "@canzatrade/logger";
 
 /**
  * Advanced grid bot template.

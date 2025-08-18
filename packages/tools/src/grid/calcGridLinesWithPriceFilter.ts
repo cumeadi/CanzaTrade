@@ -1,5 +1,5 @@
 import Big from "big.js";
-import type { IGridLine, ISymbolFilter } from "@opentrader/types";
+import type { IGridLine, ISymbolFilter } from "@canzatrade/types";
 import { filterPrice } from "../currency/index.js";
 import { calcGridLines } from "./calcGridLines.js";
 

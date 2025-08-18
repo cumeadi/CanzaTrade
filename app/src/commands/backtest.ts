@@ -1,4 +1,4 @@
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 import type { Command } from "commander";
 import { Argument, Option } from "commander";
 import { validateExchange, validatePair } from "../utils/validate.js";

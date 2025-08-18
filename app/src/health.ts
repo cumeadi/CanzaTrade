@@ -4,7 +4,7 @@
  */
 
 import { createServer } from 'http';
-import { logger } from '@opentrader/logger';
+import { logger } from '@canzatrade/logger';
 
 interface HealthResponse {
   status: 'ok' | 'error';

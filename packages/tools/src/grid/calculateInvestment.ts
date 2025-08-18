@@ -1,5 +1,5 @@
 import big from "big.js";
-import { IGridBotLevel, XOrderStatus } from '@opentrader/types';
+import { IGridBotLevel, XOrderStatus } from '@canzatrade/types';
 
 export type CalculateInvestmentResult = {
   baseCurrencyAmount: number;

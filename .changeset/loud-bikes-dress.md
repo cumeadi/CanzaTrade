@@ -1,5 +1,5 @@
 ---
-"opentrader": patch
+"canzatrade": patch
 "frontend": patch
 "processor": patch
 ---

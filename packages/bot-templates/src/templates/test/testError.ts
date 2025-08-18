@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { BotTemplate, IBotConfiguration, type TBotContext } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { BotTemplate, IBotConfiguration, type TBotContext } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testError(ctx: TBotContext<any>) {
   if (ctx.onStop) {

@@ -1,8 +1,8 @@
 import { z } from "zod";
-import { logger } from "@opentrader/logger";
-import { BarSize } from "@opentrader/types";
-import { cancelSmartTrade, IBotConfiguration, TBotContext, BotTemplate } from "@opentrader/bot-processor";
-import { decomposeSymbol } from "@opentrader/tools";
+import { logger } from "@canzatrade/logger";
+import { BarSize } from "@canzatrade/types";
+import { cancelSmartTrade, IBotConfiguration, TBotContext, BotTemplate } from "@canzatrade/bot-processor";
+import { decomposeSymbol } from "@canzatrade/tools";
 
 export function* testPublicTrade(ctx: TBotContext<BotConfig>) {
   const { config, onStart, onStop } = ctx;

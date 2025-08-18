@@ -1,5 +1,5 @@
-import type { IGridLine, IGridBotLevel } from "@opentrader/types";
-import { XOrderStatus } from "@opentrader/types";
+import type { IGridLine, IGridBotLevel } from "@canzatrade/types";
+import { XOrderStatus } from "@canzatrade/types";
 
 export const ORDER_QUANTITY = 20;
 

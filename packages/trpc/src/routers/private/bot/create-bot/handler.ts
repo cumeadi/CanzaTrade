@@ -1,8 +1,8 @@
-import { findStrategy } from "@opentrader/bot-templates/server";
+import { findStrategy } from "@canzatrade/bot-templates/server";
 import { TRPCError } from "@trpc/server";
-import { xprisma } from "@opentrader/db";
-import { eventBus } from "@opentrader/event-bus";
-import { XBotType } from "@opentrader/types";
+import { xprisma } from "@canzatrade/db";
+import { eventBus } from "@canzatrade/event-bus";
+import { XBotType } from "@canzatrade/types";
 import type { Context } from "../../../../utils/context.js";
 import type { TCreateBotInputSchema } from "./schema.js";
 

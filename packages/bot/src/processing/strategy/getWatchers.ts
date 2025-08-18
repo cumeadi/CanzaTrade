@@ -1,7 +1,7 @@
-import { TBotWithExchangeAccount } from "@opentrader/db";
-import { isValidSymbol } from "@opentrader/tools";
-import { BotTemplate, IBotConfiguration, WatchCondition, Watcher } from "@opentrader/bot-processor";
-import { BarSize, ExchangeCode } from "@opentrader/types";
+import { TBotWithExchangeAccount } from "@canzatrade/db";
+import { isValidSymbol } from "@canzatrade/tools";
+import { BotTemplate, IBotConfiguration, WatchCondition, Watcher } from "@canzatrade/bot-processor";
+import { BarSize, ExchangeCode } from "@canzatrade/types";
 
 /**
  * Extracts symbols from the watch condition.

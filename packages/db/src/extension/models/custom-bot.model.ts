@@ -1,6 +1,6 @@
 import type { Prisma, PrismaClient } from "@prisma/client";
 import type { DefaultArgs, GetFindResult, InternalArgs } from "@prisma/client/runtime/library";
-import { TBotSettings, TBotState, ZBotSettings } from "@opentrader/types";
+import { TBotSettings, TBotState, ZBotSettings } from "@canzatrade/types";
 
 type NarrowBotType<ExtArgs extends InternalArgs, T> = Omit<
   Awaited<GetFindResult<Prisma.$BotPayload<ExtArgs>, T, {}>>,

@@ -31,7 +31,7 @@ import type {
   IWatchTradesResponse,
   IOrderbook,
   ITicker,
-} from "@opentrader/types";
+} from "@canzatrade/types";
 import type { Balances, Exchange, Order, Dictionary, Market, OHLCV, Ticker, Trade, OrderBook } from "ccxt";
 
 export type Normalize = {

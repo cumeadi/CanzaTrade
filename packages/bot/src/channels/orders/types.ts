@@ -1,5 +1,5 @@
-import type { OrderWithSmartTrade } from "@opentrader/db";
-import type { ExchangeCode, IWatchOrder } from "@opentrader/types";
+import type { OrderWithSmartTrade } from "@canzatrade/db";
+import type { ExchangeCode, IWatchOrder } from "@canzatrade/types";
 
 export type OrderEventType = "onFilled" | "onCanceled" | "onPlaced";
 

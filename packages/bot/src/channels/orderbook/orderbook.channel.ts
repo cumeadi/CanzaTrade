@@ -1,8 +1,8 @@
 import { EventEmitter } from "node:events";
 import { ExchangeClosedByUser, NetworkError, RequestTimeout } from "ccxt";
-import { IExchange } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
-import { IOrderbook, MarketId } from "@opentrader/types";
+import { IExchange } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
+import { IOrderbook, MarketId } from "@canzatrade/types";
 import type { OrderbookEvent } from "./types.js";
 
 /**

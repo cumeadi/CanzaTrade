@@ -1,17 +1,17 @@
-import type { BotState, IBotConfiguration } from "@opentrader/bot-processor";
-import { createStrategyRunner } from "@opentrader/bot-processor";
-import { findStrategy } from "@opentrader/bot-templates/server";
-import { exchangeProvider } from "@opentrader/exchanges";
-import type { TBotWithExchangeAccount } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
+import type { BotState, IBotConfiguration } from "@canzatrade/bot-processor";
+import { createStrategyRunner } from "@canzatrade/bot-processor";
+import { findStrategy } from "@canzatrade/bot-templates/server";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import type { TBotWithExchangeAccount } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
 import {
   XOrderStatus,
   type ExchangeCode,
   type MarketData,
   type MarketId,
   type StrategyEventType,
-} from "@opentrader/types";
+} from "@canzatrade/types";
 import { BotStoreAdapter } from "./bot-store-adapter.js";
 
 type StrategyRunContext = {

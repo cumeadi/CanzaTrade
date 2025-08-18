@@ -1,8 +1,8 @@
 ---
-"opentrader": patch
+"canzatrade": patch
 "frontend": patch
 "processor": patch
 ---
 
-- `EventBus` moved to a separate package `@opentrader/event-bus`
+- `EventBus` moved to a separate package `@canzatrade/event-bus`
 - Subscription to `EventBus` events moved in one place, inside bot `Processor`

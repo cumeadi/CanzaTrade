@@ -1,4 +1,4 @@
-import { xprisma, toSmartTradeEntity } from "@opentrader/db";
+import { xprisma, toSmartTradeEntity } from "@canzatrade/db";
 import type { TGetSmartTradesSchema } from "./schema.js";
 import type { Context } from "../../../../utils/context.js";
 

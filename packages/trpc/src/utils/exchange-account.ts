@@ -1,7 +1,7 @@
 import { AuthenticationError, InvalidNonce } from "ccxt";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { ExchangeAccountWithCredentials } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { ExchangeAccountWithCredentials } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
 
 /**
  * Check if the exchange account credentials are valid.

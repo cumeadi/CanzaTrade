@@ -1,6 +1,6 @@
 import type { inferAsyncReturnType } from "@trpc/server";
 import type { CreateExpressContextOptions } from "@trpc/server/adapters/express";
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 
 /**
  * Creates context for an incoming request

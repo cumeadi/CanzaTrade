@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 
 import { sma } from "./sma.js";
 

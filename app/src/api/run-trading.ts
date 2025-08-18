@@ -1,7 +1,7 @@
-import { BarSize } from "@opentrader/types";
-import { logger } from "@opentrader/logger";
-import { findStrategy } from "@opentrader/bot-templates/server";
-import { ExchangeAccountWithCredentials, xprisma } from "@opentrader/db";
+import { BarSize } from "@canzatrade/types";
+import { logger } from "@canzatrade/logger";
+import { findStrategy } from "@canzatrade/bot-templates/server";
+import { ExchangeAccountWithCredentials, xprisma } from "@canzatrade/db";
 import type { CommandResult } from "../types.js";
 import { createDaemonRpcClient } from "../daemon-rpc.js";
 import { readBotConfig, readExchangesConfig } from "../config.js";

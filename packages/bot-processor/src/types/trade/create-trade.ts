@@ -1,4 +1,4 @@
-import { XOrderSide, XOrderStatus, XOrderType, XSmartTradeType } from "@opentrader/types";
+import { XOrderSide, XOrderStatus, XOrderType, XSmartTradeType } from "@canzatrade/types";
 
 export type CreateOrder = {
   /**

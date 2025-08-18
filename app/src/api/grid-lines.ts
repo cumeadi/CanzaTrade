@@ -1,4 +1,4 @@
-import { calcGridLines } from "@opentrader/tools";
+import { calcGridLines } from "@canzatrade/tools";
 import type { CommandResult } from "../types.js";
 
 export function buildGridLines(

@@ -1,4 +1,4 @@
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetExchangeAccountInputSchema } from "./schema.js";
 

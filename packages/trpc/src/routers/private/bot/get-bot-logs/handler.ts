@@ -1,5 +1,5 @@
-import { xprisma, TBotLog } from "@opentrader/db";
-import { MarketData, StrategyAction, StrategyError, StrategyEventType } from "@opentrader/types";
+import { xprisma, TBotLog } from "@canzatrade/db";
+import { MarketData, StrategyAction, StrategyError, StrategyEventType } from "@canzatrade/types";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetBotLogs } from "./schema.js";
 

@@ -1,5 +1,5 @@
 import type { ZodObject } from "zod";
-import { BarSize, StrategyEventType, XBotType } from "@opentrader/types";
+import { BarSize, StrategyEventType, XBotType } from "@canzatrade/types";
 import type { TBotContext } from "./bot-context.type.js";
 import type { IBotConfiguration } from "./bot-configuration.interface.js";
 

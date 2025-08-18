@@ -1,8 +1,8 @@
-import { type ExchangeAccountWithCredentials, xprisma } from "@opentrader/db";
-import type { SmartTradeWithOrders } from "@opentrader/db";
-import { exchangeProvider, type IExchange } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
-import { ITicker, XEntityType, XOrderStatus, XOrderType } from "@opentrader/types";
+import { type ExchangeAccountWithCredentials, xprisma } from "@canzatrade/db";
+import type { SmartTradeWithOrders } from "@canzatrade/db";
+import { exchangeProvider, type IExchange } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
+import { ITicker, XEntityType, XOrderStatus, XOrderType } from "@canzatrade/types";
 
 import { ISmartTradeExecutor, SmartTradeContext } from "../smart-trade-executor.interface.js";
 import { OrderExecutor } from "../order/order.executor.js";

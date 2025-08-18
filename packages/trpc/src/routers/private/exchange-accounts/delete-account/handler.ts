@@ -1,7 +1,7 @@
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TDeleteExchangeAccountInputSchema } from "./schema.js";
-import { eventBus } from "@opentrader/event-bus";
+import { eventBus } from "@canzatrade/event-bus";
 
 type Options = {
   ctx: {

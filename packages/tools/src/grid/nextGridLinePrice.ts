@@ -1,4 +1,4 @@
-import type { IGridLine } from "@opentrader/types";
+import type { IGridLine } from "@canzatrade/types";
 
 export function nextGridLinePrice(
   gridLines: IGridLine[],

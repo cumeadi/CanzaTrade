@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import JSON5 from "json5";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { BotConfig, ExchangeConfig } from "./types.js";
 
 const __filename = fileURLToPath(import.meta.url);

@@ -1,4 +1,4 @@
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import { BotService } from "../../../../services/bot.service.js";
 import type { Context } from "../../../../utils/context.js";
 import type { TUpdateBotInputSchema } from "./schema.js";

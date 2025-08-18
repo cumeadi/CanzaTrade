@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/db",
+  "name": "@canzatrade/db",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -9,13 +9,13 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "@types/node": "^22.10.2",
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@opentrader/prisma": "workspace:*",
+    "@canzatrade/prisma": "workspace:*",
     "@prisma/client": "6.9.0",
     "zod": "3.25.65"
   }

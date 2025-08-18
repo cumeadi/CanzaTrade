@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { ZDcaBot } from '@opentrader/db';
+import { ZDcaBot } from '@canzatrade/db';
 
 export const ZCreateDcaBotInputSchema = z.object({
   exchangeAccountId: z.number(),

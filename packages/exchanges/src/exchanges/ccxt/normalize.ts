@@ -1,6 +1,6 @@
 import { type OrderType } from "ccxt";
-import { composeSymbolIdFromPair, getExponentAbs } from "@opentrader/tools";
-import { OrderSide, XOrderType } from "@opentrader/types";
+import { composeSymbolIdFromPair, getExponentAbs } from "@canzatrade/tools";
+import { OrderSide, XOrderType } from "@canzatrade/types";
 import type { Normalize } from "../../types/normalize.interface.js";
 import { normalizeOrderStatus } from "../../utils/normalizeOrderStatus.js";
 

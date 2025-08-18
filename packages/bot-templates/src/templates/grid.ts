@@ -1,6 +1,6 @@
 import { z } from "zod";
-import type { IBotConfiguration, TBotContext } from "@opentrader/bot-processor";
-import { calcGridLines } from "@opentrader/tools";
+import type { IBotConfiguration, TBotContext } from "@canzatrade/bot-processor";
+import { calcGridLines } from "@canzatrade/tools";
 import type { GridBotConfig } from "./grid-bot.js";
 import { gridBot } from "./grid-bot.js";
 

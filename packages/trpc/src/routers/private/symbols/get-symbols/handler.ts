@@ -1,4 +1,4 @@
-import { exchangeProvider } from "@opentrader/exchanges";
+import { exchangeProvider } from "@canzatrade/exchanges";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetSymbolsInputSchema } from "./schema.js";
 

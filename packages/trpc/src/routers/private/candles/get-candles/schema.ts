@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { BarSize, ExchangeCode } from "@opentrader/types";
+import { BarSize, ExchangeCode } from "@canzatrade/types";
 
 export const ZGetCandlesInputSchema = z.object({
   exchangeCode: z.nativeEnum(ExchangeCode),

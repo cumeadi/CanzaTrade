@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { MarketData, StrategyAction, StrategyError, StrategyEventType } from "@opentrader/types";
+import { MarketData, StrategyAction, StrategyError, StrategyEventType } from "@canzatrade/types";
 import { dcaBotModel } from "./extension/models/dca-bot.model.js";
 import { gridBotModel } from "./extension/models/grid-bot.model.js";
 import { orderModel } from "./extension/models/order.model.js";

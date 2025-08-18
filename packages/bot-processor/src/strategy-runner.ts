@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { IExchange } from "@opentrader/exchanges";
-import type { MarketData, MarketId, StrategyEventType } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { MarketData, MarketId, StrategyEventType } from "@canzatrade/types";
 import { BotControl } from "./bot-control.js";
 import { effectRunnerMap } from "./effect-runner.js";
 import { isEffect, isNestedGenerator } from "./effects/index.js";

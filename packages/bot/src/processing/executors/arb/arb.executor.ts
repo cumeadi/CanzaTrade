@@ -1,7 +1,7 @@
-import { xprisma } from "@opentrader/db";
-import type { SmartTradeWithOrders } from "@opentrader/db";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
+import { xprisma } from "@canzatrade/db";
+import type { SmartTradeWithOrders } from "@canzatrade/db";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
 import type { ISmartTradeExecutor } from "../smart-trade-executor.interface.js";
 import { OrderExecutor } from "../order/order.executor.js";
 

@@ -1,15 +1,15 @@
-import { findStrategy, loadCustomStrategies } from "@opentrader/bot-templates/server";
+import { findStrategy, loadCustomStrategies } from "@canzatrade/bot-templates/server";
 import {
   xprisma,
   type ExchangeAccountWithCredentials,
   TBotWithExchangeAccount,
   SmartTradeWithOrders,
-} from "@opentrader/db";
-import { logger } from "@opentrader/logger";
-import { exchangeProvider } from "@opentrader/exchanges";
+} from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
+import { exchangeProvider } from "@canzatrade/exchanges";
 import { BotProcessing } from "./processing/index.js";
-import { eventBus } from "@opentrader/event-bus";
-import { ExchangeCode, MarketEvent } from "@opentrader/types";
+import { eventBus } from "@canzatrade/event-bus";
+import { ExchangeCode, MarketEvent } from "@canzatrade/types";
 import { EventEmitter } from "node:events";
 import { MarketsStream } from "./streams/markets.stream.js";
 import { OrderEvent, OrdersStream } from "./streams/orders.stream.js";

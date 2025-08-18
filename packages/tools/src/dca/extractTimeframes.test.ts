@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { RuleType } from "react-querybuilder";
 
-import { BarSize, IndicatorValue } from "@opentrader/types";
+import { BarSize, IndicatorValue } from "@canzatrade/types";
 import { extractTimeframes } from "./extractTimeframes.js";
 
 const RSI_RULE: RuleType<"RSI", string, IndicatorValue> = {

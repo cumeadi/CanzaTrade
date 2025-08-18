@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 import type { Dictionary, Market } from "ccxt";
-import type { ExchangeCode } from "@opentrader/types";
+import type { ExchangeCode } from "@canzatrade/types";
 import type { ICacheProvider } from "../../../types/cache/cache-provider.interface.js";
 import type { IExchange } from "../../../types/exchange.interface.js";
 

@@ -1,14 +1,14 @@
 {
-  "extends": "@opentrader/tsconfig/esm.json",
+  "extends": "@canzatrade/tsconfig/esm.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/db",
     "paths": {
-      "@opentrader/prisma": ["../prisma/src/index.ts"],
-      "@opentrader/prisma/*": ["../prisma/src/*"],
-      "@opentrader/tsconfig/*": ["../tsconfig/*"],
-      "@opentrader/types": ["../types/src/index.ts"],
-      "@opentrader/types/*": ["../types/src/*"]
+      "@canzatrade/prisma": ["../prisma/src/index.ts"],
+      "@canzatrade/prisma/*": ["../prisma/src/*"],
+      "@canzatrade/tsconfig/*": ["../tsconfig/*"],
+      "@canzatrade/types": ["../types/src/index.ts"],
+      "@canzatrade/types/*": ["../types/src/*"]
     }
   },
   "include": ["src/**/*"],

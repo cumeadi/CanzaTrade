@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { cancelSmartTrade, TBotContext, useDca } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { cancelSmartTrade, TBotContext, useDca } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testDca(ctx: TBotContext<any>) {
   if (ctx.onStart) {

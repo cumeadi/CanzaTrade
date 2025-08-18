@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/indicators",
+  "name": "@canzatrade/indicators",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -9,8 +9,8 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "@types/node": "^22.10.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",

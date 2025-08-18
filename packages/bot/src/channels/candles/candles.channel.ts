@@ -1,9 +1,9 @@
 import { EventEmitter } from "node:events";
 import { ExchangeClosedByUser, NetworkError, RequestTimeout } from "ccxt";
-import type { IExchange } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
-import { barSizeToDuration } from "@opentrader/tools";
-import { BarSize, ICandlestick } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
+import { barSizeToDuration } from "@canzatrade/tools";
+import { BarSize, ICandlestick } from "@canzatrade/types";
 
 /**
  * Channel that subscribes to 1m candles from a specific exchange

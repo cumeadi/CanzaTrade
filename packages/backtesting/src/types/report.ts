@@ -1,4 +1,4 @@
-import type { OrderSideEnum } from "@opentrader/types";
+import type { OrderSideEnum } from "@canzatrade/types";
 
 export type BuyTransaction = {
   smartTradeId: number | string;

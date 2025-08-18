@@ -1,5 +1,5 @@
-import { StrategyEventType } from "@opentrader/types";
-import { BotTemplate, IBotConfiguration } from "@opentrader/bot-processor";
+import { StrategyEventType } from "@canzatrade/types";
+import { BotTemplate, IBotConfiguration } from "@canzatrade/bot-processor";
 
 /**
  * Determines if the strategy should run based on the run policy and event type.

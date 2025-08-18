@@ -1,5 +1,5 @@
-import { toSmartTradeEntity, xprisma } from "@opentrader/db";
-import { XSmartTradeType } from "@opentrader/types";
+import { toSmartTradeEntity, xprisma } from "@canzatrade/db";
+import { XSmartTradeType } from "@canzatrade/types";
 import type { Context } from "../../../../utils/context.js";
 import { TGetDcaBotTradesSchema } from "./schema.js";
 

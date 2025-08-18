@@ -1,4 +1,4 @@
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import type { CommandResult } from "../types.js";
 
 /**

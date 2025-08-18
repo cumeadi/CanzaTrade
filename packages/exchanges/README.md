@@ -1,13 +1,13 @@
-# @opentrader/exchanges
+# @canzatrade/exchanges
 
 ## Usage
 
 ### Server
 
 ```tsx
-import { ExchangeCode } from "@opentrader/types";
-import { exchanges, cache } from "@opentrader/exchanges";
-import { PrismaCacheProvider } from "@opentrader/exchanges/server";
+import { ExchangeCode } from "@canzatrade/types";
+import { exchanges, cache } from "@canzatrade/exchanges";
+import { PrismaCacheProvider } from "@canzatrade/exchanges/server";
 
 cache.setCacheProvider(new PrismaCacheProvider());
 
@@ -25,9 +25,9 @@ export default async function Page() {
 "use client";
 
 import { useEffect, useState } from "react";
-import { ExchangeCode } from "@opentrader/types";
-import { exchanges, cache } from "@opentrader/exchanges";
-import { MemoryCacheProvider } from "@opentrader/exchanges/client";
+import { ExchangeCode } from "@canzatrade/types";
+import { exchanges, cache } from "@canzatrade/exchanges";
+import { MemoryCacheProvider } from "@canzatrade/exchanges/client";
 
 cache.setCacheProvider(new MemoryCacheProvider()); // can be ommited (used by default)
 

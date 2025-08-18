@@ -1,4 +1,4 @@
-import type { BarSize } from "@opentrader/types";
+import type { BarSize } from "@canzatrade/types";
 
 const ONE_MINUTE = 60 * 1000;
 const ONE_HOUR = 60 * ONE_MINUTE;

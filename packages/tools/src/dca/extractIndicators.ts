@@ -1,6 +1,6 @@
 import type { RuleGroupType } from "react-querybuilder";
 
-import { BarSize, isIndicatorValue, TIndicatorName, TIndicatorOptions } from "@opentrader/types";
+import { BarSize, isIndicatorValue, TIndicatorName, TIndicatorOptions } from "@canzatrade/types";
 import { isGroup } from "./utils.js";
 
 

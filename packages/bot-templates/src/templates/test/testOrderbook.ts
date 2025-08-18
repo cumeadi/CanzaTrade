@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { logger } from "@opentrader/logger";
-import { BarSize } from "@opentrader/types";
-import { cancelSmartTrade, IBotConfiguration, TBotContext, BotTemplate } from "@opentrader/bot-processor";
+import { logger } from "@canzatrade/logger";
+import { BarSize } from "@canzatrade/types";
+import { cancelSmartTrade, IBotConfiguration, TBotContext, BotTemplate } from "@canzatrade/bot-processor";
 
 export function* testOrderbook(ctx: TBotContext<TestOrderbookConfig>) {
   const { config, onStart, onStop } = ctx;

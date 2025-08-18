@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { buy, cancelSmartTrade, IBotConfiguration, TBotContext } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { buy, cancelSmartTrade, IBotConfiguration, TBotContext } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testMarketOrder(ctx: TBotContext<TestMarketOrderConfig, TestMarketOrderState>) {
   const { config: bot, onStart, onStop } = ctx;

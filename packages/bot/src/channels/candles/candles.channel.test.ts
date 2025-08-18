@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import type { BarSize, ICandlestick } from "@opentrader/types";
-import type { IExchange } from "@opentrader/exchanges";
+import type { BarSize, ICandlestick } from "@canzatrade/types";
+import type { IExchange } from "@canzatrade/exchanges";
 import { CandlesChannel } from "./candles.channel.js";
 
 function createMockExchange(): IExchange {

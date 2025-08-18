@@ -1,4 +1,4 @@
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 
 const pad = (value: string | number, length: number) =>
   value.toString().padEnd(length);

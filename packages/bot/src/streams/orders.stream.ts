@@ -1,9 +1,9 @@
 import { EventEmitter } from "node:events";
-import type { ExchangeCode, IWatchOrder } from "@opentrader/types";
-import type { OrderWithSmartTrade, ExchangeAccountWithCredentials } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
-import { decomposeSymbol } from "@opentrader/tools";
+import type { ExchangeCode, IWatchOrder } from "@canzatrade/types";
+import type { OrderWithSmartTrade, ExchangeAccountWithCredentials } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
+import { decomposeSymbol } from "@canzatrade/tools";
 import { OrdersChannel, OrderEventType } from "../channels/index.js";
 
 export type OrderEvent = {

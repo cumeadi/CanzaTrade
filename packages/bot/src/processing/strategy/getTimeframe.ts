@@ -1,5 +1,5 @@
-import { BarSize } from "@opentrader/types";
-import { BotTemplate, IBotConfiguration } from "@opentrader/bot-processor";
+import { BarSize } from "@canzatrade/types";
+import { BotTemplate, IBotConfiguration } from "@canzatrade/bot-processor";
 
 /**
  * Either return the strategy timeframe or the bot timeframe.

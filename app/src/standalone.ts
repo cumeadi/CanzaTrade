@@ -1,4 +1,4 @@
-import { App } from "@opentrader/bot";
+import { App } from "@canzatrade/bot";
 
 const app = await App.create({
   server: {

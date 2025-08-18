@@ -1,4 +1,4 @@
-import type { IGridLine, ISymbolInfo } from "@opentrader/types";
+import type { IGridLine, ISymbolInfo } from "@canzatrade/types";
 import { filterPrice, filterQuantity } from "../currency/index.js";
 import { calculateInvestment } from "./calculateInvestment.js";
 import { computeGridLevelsFromCurrentAssetPrice } from "./computeGridLevelsFromCurrentAssetPrice.js";

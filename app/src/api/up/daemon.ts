@@ -1,4 +1,4 @@
-import { App } from "@opentrader/bot";
+import { App } from "@canzatrade/bot";
 import { getSettings } from "../../utils/settings.js";
 
 const { host, port } = getSettings();

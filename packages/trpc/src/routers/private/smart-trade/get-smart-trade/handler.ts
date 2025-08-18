@@ -1,8 +1,8 @@
 import type {
   SmartTradeEntity_Order_None,
   SmartTradeEntity_Order_Order,
-} from "@opentrader/db";
-import { xprisma, toSmartTradeEntity } from "@opentrader/db";
+} from "@canzatrade/db";
+import { xprisma, toSmartTradeEntity } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetSmartTradeInputSchema } from "./schema.js";
 

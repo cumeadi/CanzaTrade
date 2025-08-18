@@ -1,10 +1,10 @@
 import { cargoQueue, QueueObject } from "async";
-import { findStrategy } from "@opentrader/bot-templates/server";
-import { eventBus } from "@opentrader/event-bus";
-import { SmartTradeWithOrders, TBotWithExchangeAccount, xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
+import { findStrategy } from "@canzatrade/bot-templates/server";
+import { eventBus } from "@canzatrade/event-bus";
+import { SmartTradeWithOrders, TBotWithExchangeAccount, xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
 import { BotProcessing, getWatchers, shouldRunStrategy } from "./processing/index.js";
-import { MarketEvent, MarketId, StrategyEvent } from "@opentrader/types";
+import { MarketEvent, MarketId, StrategyEvent } from "@canzatrade/types";
 import { MarketsStream } from "./streams/markets.stream.js";
 import { OrderEvent, OrdersStream } from "./streams/orders.stream.js";
 import { TradeManager } from "./trade.manager.js";

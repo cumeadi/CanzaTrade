@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/types",
+  "name": "@canzatrade/types",
   "version": "0.0.0",
   "description": "",
   "type": "module",
@@ -8,7 +8,7 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
     "tsup": "^8.3.5",
     "typescript": "5.8.3"
   },

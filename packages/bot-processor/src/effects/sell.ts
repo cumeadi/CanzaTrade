@@ -1,4 +1,4 @@
-import type { ExchangeCode } from "@opentrader/types";
+import type { ExchangeCode } from "@canzatrade/types";
 import { SELL } from "./types/index.js";
 import { makeEffect } from "./utils/index.js";
 

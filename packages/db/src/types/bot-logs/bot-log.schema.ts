@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { zt } from "@opentrader/prisma";
-import { StrategyAction, StrategyEventType } from "@opentrader/types";
+import { zt } from "@canzatrade/prisma";
+import { StrategyAction, StrategyEventType } from "@canzatrade/types";
 
 const ZCandlestick = z.object({
   open: z.number(),

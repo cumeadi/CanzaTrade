@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/bot-processor",
+  "name": "@canzatrade/bot-processor",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -9,17 +9,17 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "@types/node": "^22.10.2",
     "ts-node": "10.9.2",
     "tslib": "^2.8.1",
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@opentrader/exchanges": "workspace:*",
-    "@opentrader/indicators": "workspace:*",
-    "@opentrader/tools": "workspace:*",
+    "@canzatrade/exchanges": "workspace:*",
+    "@canzatrade/indicators": "workspace:*",
+    "@canzatrade/tools": "workspace:*",
     "zod": "3.25.65"
   }
 }

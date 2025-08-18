@@ -1,10 +1,10 @@
 {
-  "extends": "@opentrader/tsconfig/esm.json",
+  "extends": "@canzatrade/tsconfig/esm.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/types",
     "paths": {
-      "@opentrader/tsconfig/*": ["../tsconfig/*"]
+      "@canzatrade/tsconfig/*": ["../tsconfig/*"]
     }
   },
   "include": ["src/**/*"],

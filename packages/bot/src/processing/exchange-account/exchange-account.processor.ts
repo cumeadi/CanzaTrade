@@ -1,9 +1,9 @@
 import { OrderNotFound } from "ccxt";
-import type { ExchangeAccountWithCredentials, OrderWithSmartTrade } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
-import { exchangeProvider, type IExchange } from "@opentrader/exchanges";
-import type { IGetLimitOrderResponse, XOrderStatus } from "@opentrader/types";
-import { logger } from "@opentrader/logger";
+import type { ExchangeAccountWithCredentials, OrderWithSmartTrade } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
+import { exchangeProvider, type IExchange } from "@canzatrade/exchanges";
+import type { IGetLimitOrderResponse, XOrderStatus } from "@canzatrade/types";
+import { logger } from "@canzatrade/logger";
 import { toDbStatus } from "../utils/index.js";
 
 type SymbolId = string;

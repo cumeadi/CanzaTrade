@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import type { IExchange } from "@opentrader/exchanges";
-import type { ExchangeCode, IOrderbook } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { ExchangeCode, IOrderbook } from "@canzatrade/types";
 import { OrderbookChannel } from "./orderbook.channel.js";
 
 function createMockExchange(): IExchange {

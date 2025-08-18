@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 import { NetworkError, RequestTimeout } from "ccxt";
 import { ExchangeAccountProcessor } from "../../processing/index.js";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { OrderSynchronizerWatcher } from "./order-synchronizer-watcher.abstract.js";
-import { ExchangeCode } from "@opentrader/types";
-import { ExchangeAccountWithCredentials } from "@opentrader/db";
+import { ExchangeCode } from "@canzatrade/types";
+import { ExchangeAccountWithCredentials } from "@canzatrade/db";
 
 /**
  * This is a fallback for `OrderSynchronizerWsWatcher`.

@@ -1,8 +1,8 @@
 // Only for testing purposes. Don't export this file.
-import type { ExchangeAccountWithCredentials, SmartTradeWithOrders } from "@opentrader/db";
-import { xprisma } from "@opentrader/db";
+import type { ExchangeAccountWithCredentials, SmartTradeWithOrders } from "@canzatrade/db";
+import { xprisma } from "@canzatrade/db";
 import { Prisma } from "@prisma/client";
-import type { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import type { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 
 export const TEST_ACCOUNT_LABEL = "TEST";
 

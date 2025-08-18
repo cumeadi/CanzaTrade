@@ -1,6 +1,6 @@
 import { TRPCError } from "@trpc/server";
-import { xprisma } from "@opentrader/db";
-import { ZDcaBotSettingsRefine } from "@opentrader/types";
+import { xprisma } from "@canzatrade/db";
+import { ZDcaBotSettingsRefine } from "@canzatrade/types";
 import { BotService } from "../../../../services/bot.service.js";
 import type { Context } from "../../../../utils/context.js";
 import type { TUpdateDcaBotInputSchema } from "./schema.js";

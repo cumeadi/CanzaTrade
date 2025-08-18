@@ -1,6 +1,6 @@
-import { gridBot } from "@opentrader/bot-templates";
+import { gridBot } from "@canzatrade/bot-templates";
 import { TRPCError } from "@trpc/server";
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import type { Context } from "../../../../utils/context.js";
 import type { TCreateGridBotInputSchema } from "./schema.js";
 

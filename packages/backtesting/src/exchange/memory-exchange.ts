@@ -1,4 +1,4 @@
-import type { IExchange } from "@opentrader/exchanges";
+import type { IExchange } from "@canzatrade/exchanges";
 import type {
   IAccountAsset,
   IGetTradingFeeRatesRequest,
@@ -28,8 +28,8 @@ import type {
   ITrade,
   IOrderbook,
   ITicker,
-} from "@opentrader/types";
-import { ExchangeCode } from "@opentrader/types";
+} from "@canzatrade/types";
+import { ExchangeCode } from "@canzatrade/types";
 import type { MarketSimulator } from "../market-simulator.js";
 
 export class MemoryExchange implements IExchange {

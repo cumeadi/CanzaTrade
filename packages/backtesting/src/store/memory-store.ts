@@ -1,6 +1,6 @@
-import { IStore, Order, CreateTrade, Trade } from "@opentrader/bot-processor";
-import type { IExchange } from "@opentrader/exchanges";
-import { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import { IStore, Order, CreateTrade, Trade } from "@canzatrade/bot-processor";
+import type { IExchange } from "@canzatrade/exchanges";
+import { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 import { uniqueId } from "lodash";
 import type { MarketSimulator } from "../market-simulator.js";
 

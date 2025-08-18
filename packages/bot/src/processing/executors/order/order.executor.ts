@@ -1,9 +1,9 @@
-import type { IExchange } from "@opentrader/exchanges";
-import { XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import { XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 import type { Order } from "@prisma/client";
-import { logger } from "@opentrader/logger";
-import type { OrderEntity } from "@opentrader/db";
-import { assertHasExchangeOrderId, toOrderEntity, xprisma } from "@opentrader/db";
+import { logger } from "@canzatrade/logger";
+import type { OrderEntity } from "@canzatrade/db";
+import { assertHasExchangeOrderId, toOrderEntity, xprisma } from "@canzatrade/db";
 import { OrderNotFound } from "ccxt";
 
 export class OrderExecutor {

@@ -1,6 +1,6 @@
 import superjson from "superjson";
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
-import { appRouter } from "@opentrader/trpc";
+import { appRouter } from "@canzatrade/trpc";
 
 import { getSettings } from "./utils/settings.js";
 

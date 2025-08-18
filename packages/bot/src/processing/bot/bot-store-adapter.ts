@@ -1,9 +1,9 @@
-import { CreateTrade, IStore } from "@opentrader/bot-processor";
-import { xprisma } from "@opentrader/db";
-import { exchangeProvider } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
-import { XOrderStatus, XTakeProfitType } from "@opentrader/types";
-import { eventBus } from "@opentrader/event-bus";
+import { CreateTrade, IStore } from "@canzatrade/bot-processor";
+import { xprisma } from "@canzatrade/db";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
+import { XOrderStatus, XTakeProfitType } from "@canzatrade/types";
+import { eventBus } from "@canzatrade/event-bus";
 import { OrderNormalizer, SmartTradeNormalizer } from "./normalizer.js";
 
 export class BotStoreAdapter implements IStore {

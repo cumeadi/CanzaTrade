@@ -2,7 +2,7 @@
 
 ## Overview
 
-The CanzaTrade Design System is a comprehensive, cohesive design framework that transforms the OpenTrader frontend into a professional, branded trading platform. This system provides consistent colors, typography, components, and utilities that ensure visual harmony across the entire application.
+The CanzaTrade Design System is a comprehensive, cohesive design framework that transforms the CanzaTrade frontend into a professional, branded trading platform. This system provides consistent colors, typography, components, and utilities that ensure visual harmony across the entire application.
 
 ## Table of Contents
 

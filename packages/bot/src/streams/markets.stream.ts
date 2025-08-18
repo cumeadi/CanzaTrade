@@ -1,13 +1,13 @@
 import { EventEmitter } from "node:events";
-import { TBotWithExchangeAccount } from "@opentrader/db";
-import { findStrategy } from "@opentrader/bot-templates/server";
+import { TBotWithExchangeAccount } from "@canzatrade/db";
+import { findStrategy } from "@canzatrade/bot-templates/server";
 import { getWatchers } from "../processing/index.js";
 import {
   CandleClosedMarketEvent,
   OrderbookChangeMarketEvent,
   PublicTradeMarketEvent,
   TickerChangeMarketEvent,
-} from "@opentrader/types";
+} from "@canzatrade/types";
 import { CandlesStream } from "./candles.stream.js";
 import { OrderbookStream } from "./orderbook.stream.js";
 import { TradesStream } from "./trades.stream.js";

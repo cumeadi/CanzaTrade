@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/backtesting",
+  "name": "@canzatrade/backtesting",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -9,17 +9,17 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.10.2",
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@opentrader/bot-processor": "workspace:*",
-    "@opentrader/exchanges": "workspace:*",
-    "@opentrader/logger": "workspace:*",
-    "@opentrader/tools": "workspace:*",
+    "@canzatrade/bot-processor": "workspace:*",
+    "@canzatrade/exchanges": "workspace:*",
+    "@canzatrade/logger": "workspace:*",
+    "@canzatrade/tools": "workspace:*",
     "lodash": "^4.17.21",
     "table": "^6.9.0"
   }

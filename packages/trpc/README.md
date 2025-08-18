@@ -6,7 +6,7 @@
 
 ```ts
 // src/app/api/trpc/[trpc]/route.ts
-import { appRouter, createContext } from "@opentrader/trpc";
+import { appRouter, createContext } from "@canzatrade/trpc";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 
 const handler = (req: Request) =>
@@ -29,7 +29,7 @@ export { handler as GET, handler as POST };
 import { INestApplication, Injectable } from "@nestjs/common";
 import * as trpcExpress from "@trpc/server/adapters/express";
 
-import { appRouter } from "@opentrader/trpc";
+import { appRouter } from "@canzatrade/trpc";
 
 @Injectable()
 export class TrpcMiddleware {
@@ -65,7 +65,7 @@ bootstrap();
 ```ts
 // lib/trc/client.ts
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
-import type { AppRouter } from "@opentrader/trpc";
+import type { AppRouter } from "@canzatrade/trpc";
 //     👆 **type-only** import
 
 export const tClient = createTRPCProxyClient<AppRouter>({
@@ -110,7 +110,7 @@ export const TrpcProvider: React.FC<{ children: React.ReactNode }> = ({
 
 ```tsx
 // lib/trpc/server.ts
-import { appRouter } from "@opentrader/trpc";
+import { appRouter } from "@canzatrade/trpc";
 
 export const tServer = appRouter.createCaller({
   /* context here */

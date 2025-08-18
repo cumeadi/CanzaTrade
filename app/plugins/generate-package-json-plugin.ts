@@ -34,7 +34,7 @@ export const generatePackageJsonPlugin = (): Plugin => ({
         target: Record<string, string>,
       ) => {
         for (const [key, value] of Object.entries(source)) {
-          if (!key.startsWith("@opentrader/")) {
+          if (!key.startsWith("@canzatrade/")) {
             if (!target[key]) {
               target[key] = value;
             } else if (target[key] !== value) {
@@ -89,7 +89,7 @@ export const generatePackageJsonPlugin = (): Plugin => ({
 
       // Add postinstall script
       newPackageJson.scripts.postinstall =
-        'prisma generate && DATABASE_URL="file:${HOME}/.opentrader/dev.db" prisma migrate dev && node scripts/postinstall.mjs';
+        'prisma generate && DATABASE_URL="file:${HOME}/.canzatrade/dev.db" prisma migrate dev && node scripts/postinstall.mjs';
 
       // Write to new package.json file
       newPackageJson.prisma = {

@@ -1,11 +1,11 @@
 import { InsufficientFunds } from "ccxt";
 import { cargoQueue, QueueObject } from "async";
-import { type ExchangeAccountWithCredentials, SmartTradeWithOrders, xprisma } from "@opentrader/db";
-import { eventBus } from "@opentrader/event-bus";
-import { exchangeProvider, IExchange } from "@opentrader/exchanges";
-import { logger } from "@opentrader/logger";
+import { type ExchangeAccountWithCredentials, SmartTradeWithOrders, xprisma } from "@canzatrade/db";
+import { eventBus } from "@canzatrade/event-bus";
+import { exchangeProvider, IExchange } from "@canzatrade/exchanges";
+import { logger } from "@canzatrade/logger";
 import { SmartTradeExecutor } from "./processing/index.js";
-import { ITicker } from "@opentrader/types";
+import { ITicker } from "@canzatrade/types";
 import { TickerChannel, TickerEvent } from "./channels/ticker/index.js";
 import { OrderEvent, OrdersStream } from "./streams/orders.stream.js";
 

@@ -1,4 +1,4 @@
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 import { CURRENCY_PAIR_DELIMITER, EXCHANGE_CODE_DELIMITER } from "./constants.js";
 
 const exchangeCodes = Object.keys(ExchangeCode);

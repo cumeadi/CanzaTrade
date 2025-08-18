@@ -1,4 +1,4 @@
-import { BarSize, TIndicatorName, TIndicatorOptions } from "@opentrader/types";
+import { BarSize, TIndicatorName, TIndicatorOptions } from "@canzatrade/types";
 import { makeEffect } from "./utils/index.js";
 import { USE_INDICATOR, USE_INDICATORS } from "./types/index.js";
 

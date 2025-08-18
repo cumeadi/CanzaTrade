@@ -1,4 +1,4 @@
-import { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import { XEntityType, XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 
 export type Order = {
   id: number;

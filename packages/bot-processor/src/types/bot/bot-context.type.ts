@@ -1,5 +1,5 @@
-import type { IExchange } from "@opentrader/exchanges";
-import type { MarketData, MarketId, StrategyEventType } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { MarketData, MarketId, StrategyEventType } from "@canzatrade/types";
 import type { IBotControl } from "./bot-control.interface.js";
 import type { IBotConfiguration } from "./bot-configuration.interface.js";
 import type { BotState } from "./bot.state.js";

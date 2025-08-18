@@ -1,4 +1,4 @@
-import type { BarSize, ExchangeCode } from "@opentrader/types";
+import type { BarSize, ExchangeCode } from "@canzatrade/types";
 
 export type IBotConfiguration<T = any> = {
   id: number;

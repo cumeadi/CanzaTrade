@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 export { trpc } from "./trpc.js";
 export { type AppRouter, appRouter } from "./routers/appRouter.js";

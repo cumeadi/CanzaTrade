@@ -1,4 +1,4 @@
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 import { z } from "zod";
 
 export const ZGetSymbolsInputSchema = z.object({

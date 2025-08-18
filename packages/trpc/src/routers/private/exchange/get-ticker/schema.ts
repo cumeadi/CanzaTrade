@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 
 export const ZGetExchangeTickerSchema = z.object({
   exchangeCode: z.nativeEnum(ExchangeCode),

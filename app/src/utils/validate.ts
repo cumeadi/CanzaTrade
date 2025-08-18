@@ -1,4 +1,4 @@
-import { BarSize, ExchangeCode } from "@opentrader/types";
+import { BarSize, ExchangeCode } from "@canzatrade/types";
 
 export function validateTimeframe(timeframe?: string | null): BarSize | null {
   if (!timeframe) {

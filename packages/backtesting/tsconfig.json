@@ -1,20 +1,20 @@
 {
-  "extends": "@opentrader/tsconfig/esm.json",
+  "extends": "@canzatrade/tsconfig/esm.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/backtesting",
     "paths": {
-      "@opentrader/bot-processor": ["../bot-processor/src/index.ts"],
-      "@opentrader/bot-processor/*": ["../bot-processor/src/*"],
-      "@opentrader/exchanges": ["../exchanges/src/index.ts"],
-      "@opentrader/exchanges/*": ["../exchanges/src/*"],
-      "@opentrader/logger": ["../logger/src/index.ts"],
-      "@opentrader/logger/*": ["../logger/src/*"],
-      "@opentrader/tools": ["../tools/src/index.ts"],
-      "@opentrader/tools/*": ["../tools/src/*"],
-      "@opentrader/tsconfig/*": ["../tsconfig/*"],
-      "@opentrader/types": ["../types/src/index.ts"],
-      "@opentrader/types/*": ["../types/src/*"]
+      "@canzatrade/bot-processor": ["../bot-processor/src/index.ts"],
+      "@canzatrade/bot-processor/*": ["../bot-processor/src/*"],
+      "@canzatrade/exchanges": ["../exchanges/src/index.ts"],
+      "@canzatrade/exchanges/*": ["../exchanges/src/*"],
+      "@canzatrade/logger": ["../logger/src/index.ts"],
+      "@canzatrade/logger/*": ["../logger/src/*"],
+      "@canzatrade/tools": ["../tools/src/index.ts"],
+      "@canzatrade/tools/*": ["../tools/src/*"],
+      "@canzatrade/tsconfig/*": ["../tsconfig/*"],
+      "@canzatrade/types": ["../types/src/index.ts"],
+      "@canzatrade/types/*": ["../types/src/*"]
     }
   },
   "include": ["src/**/*"],

@@ -1,4 +1,4 @@
-import { XOrderStatus, XSmartTradeType } from "@opentrader/types";
+import { XOrderStatus, XSmartTradeType } from "@canzatrade/types";
 import { cancelSmartTrade, replaceSmartTrade } from "../../effects/index.js";
 import { Trade } from "../trade/index.js";
 

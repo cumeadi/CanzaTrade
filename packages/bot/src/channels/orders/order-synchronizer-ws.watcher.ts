@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import { xprisma } from "@opentrader/db";
+import { xprisma } from "@canzatrade/db";
 import {
   AuthenticationError,
   ExchangeClosedByUser,
@@ -24,9 +24,9 @@ import {
   NotSupported,
   RequestTimeout,
 } from "ccxt";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { OrderSynchronizerWatcher } from "./order-synchronizer-watcher.abstract.js";
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 
 export class OrderSynchronizerWsWatcher extends OrderSynchronizerWatcher {
   protocol = "ws" as const;

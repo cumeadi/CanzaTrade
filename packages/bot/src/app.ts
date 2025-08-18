@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { createServer, CreateServerOptions } from "./server.js";
 import { bootstrapPlatform, type Platform } from "./platform.js";
 
@@ -48,7 +48,7 @@ export class App {
     await server.listen();
 
     logger.info(`RPC Server listening on port ${params.server.port}`);
-    logger.info(`OpenTrader UI: http://${params.server.host}:${params.server.port}`);
+    logger.info(`CanzaTrade UI: http://${params.server.host}:${params.server.port}`);
 
     return new App(platform, server);
   }

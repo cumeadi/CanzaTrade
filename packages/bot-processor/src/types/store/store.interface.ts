@@ -1,4 +1,4 @@
-import type { IExchange } from "@opentrader/exchanges";
+import type { IExchange } from "@canzatrade/exchanges";
 import { Trade, CreateTrade } from "../trade/index.js";
 
 export interface IStore {

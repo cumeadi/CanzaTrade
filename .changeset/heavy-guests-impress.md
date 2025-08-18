@@ -1,5 +1,5 @@
 ---
-"opentrader": minor
+"canzatrade": minor
 "frontend": minor
 "processor": minor
 ---
@@ -13,6 +13,6 @@
 - chore: upgrade zod (#49)
 - chore: minor dependencies upgrade (#81)
 - chore: logging improvements
-- feat(daemon): add `opentrader status` command
+- feat(daemon): add `canzatrade status` command
 - docs(README.md): update strategies description
 - docs(README.md): add Reddit community badge

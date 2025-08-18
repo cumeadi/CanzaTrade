@@ -1,7 +1,7 @@
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import type { CommandResult } from "../../types.js";
 import { getPid, savePid } from "../../utils/pid.js";
 import { saveSettings } from "../../utils/settings.js";
@@ -26,7 +26,7 @@ export async function up(options: Options): Promise<CommandResult> {
   const pid = getPid();
 
   if (pid) {
-    logger.warn(`OpenTrader already running [PID: ${pid}]`);
+    logger.warn(`CanzaTrade already running [PID: ${pid}]`);
 
     return {
       result: undefined,
@@ -47,15 +47,15 @@ export async function up(options: Options): Promise<CommandResult> {
       });
 
   if (daemonProcess.pid === undefined) {
-    throw new Error("OpenTrader process not started. PID is undefined.");
+    throw new Error("CanzaTrade process not started. PID is undefined.");
   }
 
-  logger.debug(`OpenTrader daemon started with PID: ${daemonProcess.pid}`);
+  logger.debug(`CanzaTrade daemon started with PID: ${daemonProcess.pid}`);
 
   if (options.detach) {
     daemonProcess.unref();
     savePid(daemonProcess.pid);
-    logger.info(`OpenTrader started as a daemon [PID: ${daemonProcess.pid}]`);
+    logger.info(`CanzaTrade started as a daemon [PID: ${daemonProcess.pid}]`);
   } else {
     daemonProcess.stdout?.pipe(process.stdout);
     daemonProcess.stderr?.pipe(process.stderr);

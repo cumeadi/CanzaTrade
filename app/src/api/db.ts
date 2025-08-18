@@ -1,7 +1,7 @@
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { execa } from "execa";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { CommandResult } from "../types.js";
 
 const __filename = fileURLToPath(import.meta.url);

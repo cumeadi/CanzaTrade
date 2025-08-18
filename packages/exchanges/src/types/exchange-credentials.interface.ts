@@ -1,4 +1,4 @@
-import type { ExchangeCode } from "@opentrader/types";
+import type { ExchangeCode } from "@canzatrade/types";
 
 export interface IExchangeCredentials {
   code: ExchangeCode;

@@ -1,4 +1,4 @@
-import type { OrderStatus, XOrderStatus } from "@opentrader/types";
+import type { OrderStatus, XOrderStatus } from "@canzatrade/types";
 
 /**
  * Map Exchange order status to DB order status

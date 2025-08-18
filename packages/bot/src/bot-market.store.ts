@@ -1,4 +1,4 @@
-import { MarketData, MarketEvent, MarketId, StrategyEventType } from "@opentrader/types";
+import { MarketData, MarketEvent, MarketId, StrategyEventType } from "@canzatrade/types";
 
 type MarketKey = string;
 

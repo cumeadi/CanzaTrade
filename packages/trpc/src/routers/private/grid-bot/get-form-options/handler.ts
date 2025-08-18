@@ -1,6 +1,6 @@
-import { exchangeProvider, IExchange } from "@opentrader/exchanges";
-import { decomposeSymbolId } from "@opentrader/tools";
-import type { ExchangeCode } from "@opentrader/types";
+import { exchangeProvider, IExchange } from "@canzatrade/exchanges";
+import { decomposeSymbolId } from "@canzatrade/tools";
+import type { ExchangeCode } from "@canzatrade/types";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetGridBotFormOptionsInputSchema } from "./schema.js";
 

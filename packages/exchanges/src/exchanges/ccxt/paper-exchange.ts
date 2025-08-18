@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 import { ExchangeClosedByUser, NetworkError, RequestTimeout } from "ccxt";
 import {
@@ -40,8 +40,8 @@ import {
   OrderType,
   IPlaceOrderRequest,
   IPlaceOrderResponse,
-} from "@opentrader/types";
-import { PaperOrder, xprisma } from "@opentrader/db";
+} from "@canzatrade/types";
+import { PaperOrder, xprisma } from "@canzatrade/db";
 import { CCXTExchange } from "./exchange.js";
 
 const ORDER_PLACEMENT_DELAY = 100;

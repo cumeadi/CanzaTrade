@@ -1,4 +1,4 @@
-import { eventBus } from "@opentrader/event-bus";
+import { eventBus } from "@canzatrade/event-bus";
 import { BotService } from "../../../../services/bot.service.js";
 import type { Context } from "../../../../utils/context.js";
 import type { TStopGridBotInputSchema } from "./schema.js";

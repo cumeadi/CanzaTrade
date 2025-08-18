@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { logger } from "@opentrader/logger";
-import { TBotContext } from "@opentrader/bot-processor";
+import { logger } from "@canzatrade/logger";
+import { TBotContext } from "@canzatrade/bot-processor";
 
 export function* testTrades(ctx: TBotContext<any>) {
   logger.info("[TRADES]: Strategy exec");

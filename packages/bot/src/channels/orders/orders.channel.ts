@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { ExchangeAccountWithCredentials } from "@opentrader/db";
+import type { ExchangeAccountWithCredentials } from "@canzatrade/db";
 import { OrderSynchronizerPollingWatcher } from "./order-synchronizer-polling.watcher.js";
 import { OrderSynchronizerWsWatcher } from "./order-synchronizer-ws.watcher.js";
 import type { OrderEventType, Subscription } from "./types.js";

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 import { RSI } from "technicalindicators";
 import { IndicatorError } from "../utils/indicator.error.js";
 

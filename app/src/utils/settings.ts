@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { appPath, settingsPath } from "./app-path.js";
 
 type DaemonSettings = {

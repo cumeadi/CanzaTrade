@@ -1,6 +1,6 @@
-import { ExchangeAccountWithCredentials, TBot, xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
-import { BarSize } from "@opentrader/types";
+import { ExchangeAccountWithCredentials, TBot, xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
+import { BarSize } from "@canzatrade/types";
 import { BotConfig, ExchangeConfig } from "../types.js";
 
 /**

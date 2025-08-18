@@ -1,5 +1,5 @@
-import type { IGridBotLevel, IGridLine } from "@opentrader/types";
-import { XOrderStatus } from "@opentrader/types";
+import type { IGridBotLevel, IGridLine } from "@canzatrade/types";
+import { XOrderStatus } from "@canzatrade/types";
 
 import { isWaitingGridLine } from "./isWaitingGridLine.js";
 import { nextGridLinePrice } from "./nextGridLinePrice.js";

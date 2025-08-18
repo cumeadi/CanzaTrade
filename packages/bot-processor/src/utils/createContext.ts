@@ -1,5 +1,5 @@
-import type { IExchange } from "@opentrader/exchanges";
-import type { MarketData, MarketId, StrategyEventType } from "@opentrader/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { MarketData, MarketId, StrategyEventType } from "@canzatrade/types";
 import type { BotState, IBotConfiguration, IBotControl, TBotContext } from "../types/index.js";
 
 export function createContext<T extends IBotConfiguration>(

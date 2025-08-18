@@ -4,7 +4,7 @@ import { writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { generate } from "random-words";
 
-const APP_DIR = ".opentrader";
+const APP_DIR = ".canzatrade";
 export const appPath = join(homedir(), APP_DIR);
 export const passFilePath = join(appPath, "pass");
 export const dbFilePath = join(appPath, "dev.db");

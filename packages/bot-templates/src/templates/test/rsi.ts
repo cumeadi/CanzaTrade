@@ -1,7 +1,7 @@
 import { z } from "zod";
-import type { TBotContext } from "@opentrader/bot-processor";
-import { useRSI } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import type { TBotContext } from "@canzatrade/bot-processor";
+import { useRSI } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testRsi(ctx: TBotContext<any>) {
   if (ctx.onStart) {

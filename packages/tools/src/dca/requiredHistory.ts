@@ -1,4 +1,4 @@
-import { BarSize, TIndicatorName, TIndicatorOptions } from "@opentrader/types";
+import { BarSize, TIndicatorName, TIndicatorOptions } from "@canzatrade/types";
 import { barSizeToDuration } from "../candlesticks/index.js";
 
 /**

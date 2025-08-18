@@ -1,4 +1,4 @@
-import { ZGridBot } from "@opentrader/db";
+import { ZGridBot } from "@canzatrade/db";
 import { z } from "zod";
 
 export const ZUpdateGridBotInputSchema = z.object({

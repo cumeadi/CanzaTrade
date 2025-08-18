@@ -1,4 +1,4 @@
-import { XEntityType, XEntryType, XTakeProfitType } from "@opentrader/types";
+import { XEntityType, XEntryType, XTakeProfitType } from "@canzatrade/types";
 import type { SmartTradeWithOrders } from "../types/smart-trade/index.js";
 import type { OrderEntity } from "./order.entity.js";
 import { toOrderEntity } from "./order.entity.js";

@@ -5,8 +5,8 @@ import {
   type SmartTradeService,
   type TBotContext,
   useSmartTrade,
-} from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+} from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testStopLoss(ctx: TBotContext<TestStopLossSchema>) {
   logger.info("[TestStopLoss] Executing strategy template");

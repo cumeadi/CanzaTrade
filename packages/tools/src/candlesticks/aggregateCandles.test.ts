@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { BarSize, ICandlestick } from "@opentrader/types";
+import { BarSize, ICandlestick } from "@canzatrade/types";
 import { aggregateCandles } from "./aggregateCandles.js";
 
 // Sample 1-minute candles for testing

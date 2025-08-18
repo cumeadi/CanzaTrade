@@ -1,4 +1,4 @@
-import { logger } from "@opentrader/logger";
+import { logger } from "@canzatrade/logger";
 import { CommandResult } from "../types.js";
 import { getPid } from "../utils/pid.js";
 

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 
-import { ExchangeAccountWithCredentials, SmartTradeWithOrders, TBotWithExchangeAccount } from "@opentrader/db";
+import { ExchangeAccountWithCredentials, SmartTradeWithOrders, TBotWithExchangeAccount } from "@canzatrade/db";
 import Emittery from "emittery";
 
 export const eventBus = new Emittery<{

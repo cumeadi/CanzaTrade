@@ -19,10 +19,10 @@ docker -v
 1. Clone the repository:
 
 ```bash
-git clone git@github.com:bludnic/opentrader.git
+git clone git@github.com:bludnic/canzatrade.git
 ```
 
-2. Clone Git submodules (optional). Run this only if you have access to the [opentrader-pro](https://github.com/bludnic/opentrader-pro) repository (private). Refer to the [UI](/CONTRIBUTING.md#UI) section below.
+2. Clone Git submodules (optional). Run this only if you have access to the [canzatrade-pro](https://github.com/bludnic/canzatrade-pro) repository (private). Refer to the [UI](/CONTRIBUTING.md#UI) section below.
 
 ```bash
 git submodule update --init

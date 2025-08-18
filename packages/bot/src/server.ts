@@ -4,7 +4,7 @@ import Fastify from "fastify";
 import fastifyCors from "@fastify/cors";
 import fastifyStatic from "@fastify/static";
 import { fastifyTRPCPlugin } from "@trpc/server/adapters/fastify";
-import { appRouter } from "@opentrader/trpc";
+import { appRouter } from "@canzatrade/trpc";
 import { createContext } from "./trpc.js";
 
 // Path to the current file

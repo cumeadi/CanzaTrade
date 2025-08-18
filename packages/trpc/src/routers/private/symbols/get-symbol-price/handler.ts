@@ -1,5 +1,5 @@
-import { exchangeProvider } from "@opentrader/exchanges";
-import { decomposeSymbolId } from "@opentrader/tools";
+import { exchangeProvider } from "@canzatrade/exchanges";
+import { decomposeSymbolId } from "@canzatrade/tools";
 import type { Context } from "../../../../utils/context.js";
 import type { TGetSymbolPriceInputSchema } from "./schema.js";
 

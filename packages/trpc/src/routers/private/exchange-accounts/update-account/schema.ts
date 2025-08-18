@@ -1,4 +1,4 @@
-import { zt } from "@opentrader/prisma";
+import { zt } from "@canzatrade/prisma";
 import { z } from "zod";
 
 export const ZUpdateExchangeAccountInputSchema = z.object({

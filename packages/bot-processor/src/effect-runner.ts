@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import { rsi, ema, sma } from "@opentrader/indicators";
-import { aggregateCandles, IndicatorsValues } from "@opentrader/tools";
-import { XOrderSide, XOrderStatus, XOrderType } from "@opentrader/types";
+import { rsi, ema, sma } from "@canzatrade/indicators";
+import { aggregateCandles, IndicatorsValues } from "@canzatrade/tools";
+import { XOrderSide, XOrderStatus, XOrderType } from "@canzatrade/types";
 import { SmartTradeService } from "./types/index.js";
 import type { TBotContext } from "./types/index.js";
 import {

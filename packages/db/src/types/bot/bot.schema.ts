@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { zt } from "@opentrader/prisma";
-import { ZBotSettings, ZBotState, ZDcaBotSettings, ZGridBotSettings } from "@opentrader/types";
+import { zt } from "@canzatrade/prisma";
+import { ZBotSettings, ZBotState, ZDcaBotSettings, ZGridBotSettings } from "@canzatrade/types";
 
 export const ZBot = zt.BotSchema.extend({
   settings: ZBotSettings,

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
-import type { BotTemplate } from "@opentrader/bot-processor";
+import type { BotTemplate } from "@canzatrade/bot-processor";
 import * as templates from "../templates/index.js";
 import { customStrategies } from "./custom-strategies.js";
 

@@ -1,9 +1,9 @@
 import { z } from "zod";
-import type { IExchange } from "@opentrader/exchanges";
-import { MarketData, ICandlestick, BarSize } from "@opentrader/types";
-import type { TBotContext } from "@opentrader/bot-processor";
-import { useMarket, useCandle, useExchange } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import type { IExchange } from "@canzatrade/exchanges";
+import { MarketData, ICandlestick, BarSize } from "@canzatrade/types";
+import type { TBotContext } from "@canzatrade/bot-processor";
+import { useMarket, useCandle, useExchange } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testCandle(ctx: TBotContext<any>) {
   const { config: bot, onStart, onStop } = ctx;

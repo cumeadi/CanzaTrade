@@ -1,4 +1,4 @@
-import { isValidSymbolId } from "@opentrader/tools";
+import { isValidSymbolId } from "@canzatrade/tools";
 import { z } from "zod";
 
 export const ZGetSymbolInputSchema = z.object({

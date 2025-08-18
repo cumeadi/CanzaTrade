@@ -1,4 +1,4 @@
-import type { ISymbolFilter } from "@opentrader/types";
+import type { ISymbolFilter } from "@canzatrade/types";
 
 export const ETH_SYMBOL_FILTER: ISymbolFilter = {
   precision: {

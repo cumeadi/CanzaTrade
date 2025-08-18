@@ -1,4 +1,4 @@
-import type { ExchangeCode, ITicker, MarketId } from "@opentrader/types";
+import type { ExchangeCode, ITicker, MarketId } from "@canzatrade/types";
 
 export type TickerEvent = {
   exchangeCode: ExchangeCode;

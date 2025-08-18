@@ -1,18 +1,18 @@
 {
-  "extends": "@opentrader/tsconfig/esm.json",
+  "extends": "@canzatrade/tsconfig/esm.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/bot-processor",
     "paths": {
-      "@opentrader/exchanges": ["../exchanges/src/index.ts"],
-      "@opentrader/exchanges/*": ["../exchanges/src/*"],
-      "@opentrader/indicators": ["../indicators/src/index.ts"],
-      "@opentrader/indicators/*": ["../indicators/src/*"],
-      "@opentrader/tools": ["../tools/src/index.ts"],
-      "@opentrader/tools/*": ["../tools/src/*"],
-      "@opentrader/tsconfig/*": ["../tsconfig/*"],
-      "@opentrader/types": ["../types/src/index.ts"],
-      "@opentrader/types/*": ["../types/src/*"]
+      "@canzatrade/exchanges": ["../exchanges/src/index.ts"],
+      "@canzatrade/exchanges/*": ["../exchanges/src/*"],
+      "@canzatrade/indicators": ["../indicators/src/index.ts"],
+      "@canzatrade/indicators/*": ["../indicators/src/*"],
+      "@canzatrade/tools": ["../tools/src/index.ts"],
+      "@canzatrade/tools/*": ["../tools/src/*"],
+      "@canzatrade/tsconfig/*": ["../tsconfig/*"],
+      "@canzatrade/types": ["../types/src/index.ts"],
+      "@canzatrade/types/*": ["../types/src/*"]
     }
   },
   "include": ["src/**/*"],

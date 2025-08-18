@@ -1,5 +1,5 @@
-import type { Trade } from "@opentrader/bot-processor";
-import { OrderSideEnum } from "@opentrader/types";
+import type { Trade } from "@canzatrade/bot-processor";
+import { OrderSideEnum } from "@canzatrade/types";
 import type { BuyTransaction } from "../types/index.js";
 
 export function buyTransaction(smartTrade: Trade): BuyTransaction {

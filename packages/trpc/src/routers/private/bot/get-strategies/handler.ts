@@ -1,8 +1,8 @@
 import { z, ZodObject } from "zod";
 import { zodToJsonSchema, type JsonSchema7Type } from "zod-to-json-schema";
-import { BotTemplate } from "@opentrader/bot-processor";
-import { templates } from "@opentrader/bot-templates";
-import { customStrategies } from "@opentrader/bot-templates/server";
+import { BotTemplate } from "@canzatrade/bot-processor";
+import { templates } from "@canzatrade/bot-templates";
+import { customStrategies } from "@canzatrade/bot-templates/server";
 import type { Context } from "../../../../utils/context.js";
 
 type Options = {
@@ -21,7 +21,7 @@ type StrategyInfo = { name: string; schema: JsonSchema7Type; isCustom: boolean }
 function isZodObject(schema: any): schema is ZodObject<any> {
   // Using `instance of ZodObject` will not work because
   // in custom strategies the `z` is imported from a different package
-  // TODO: Maybe export the `z` instance to allow importing it as `import { z } from "opentrader";`
+  // TODO: Maybe export the `z` instance to allow importing it as `import { z } from .canzatrade";`
 
   return schema?._def?.typeName === "ZodObject";
 }

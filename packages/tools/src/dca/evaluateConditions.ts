@@ -1,6 +1,6 @@
 import type { RuleGroupType } from "react-querybuilder";
 
-import { BarSize, TIndicatorName, isIndicatorValue } from "@opentrader/types";
+import { BarSize, TIndicatorName, isIndicatorValue } from "@canzatrade/types";
 import { isGroup, toIndicatorOptions } from "./utils.js";
 
 export type IndicatorsValues = Partial<Record<TIndicatorName, Partial<Record<BarSize, { [options: string]: number }>>>>;

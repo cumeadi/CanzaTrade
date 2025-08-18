@@ -1,4 +1,4 @@
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 import { createExchange } from "./ccxt/factory.js";
 import { exchangeCodeMapCCXT } from "../client/constants.js";
 

@@ -1,4 +1,4 @@
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 
 export const CANDLESTICKS: ICandlestick[] = [
   { open: 2148, high: 2149, low: 2145, close: 2149, timestamp: 1677199380000, volume: 0 },

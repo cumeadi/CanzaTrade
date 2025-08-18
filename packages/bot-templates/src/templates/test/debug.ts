@@ -1,9 +1,9 @@
 import { z } from "zod";
-import type { ISymbolInfo } from "@opentrader/types";
-import type { IExchange } from "@opentrader/exchanges";
-import type { IBotConfiguration, TBotContext } from "@opentrader/bot-processor";
-import { useExchange } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import type { ISymbolInfo } from "@canzatrade/types";
+import type { IExchange } from "@canzatrade/exchanges";
+import type { IBotConfiguration, TBotContext } from "@canzatrade/bot-processor";
+import { useExchange } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* debug(ctx: TBotContext<DebugStrategyConfig>) {
   const { config: bot, onStart, onStop } = ctx;

@@ -1,4 +1,4 @@
-import { BarSize, ICandlestick } from "@opentrader/types";
+import { BarSize, ICandlestick } from "@canzatrade/types";
 import { barSizeToDuration } from "./barSizeToDuration.js";
 
 /**

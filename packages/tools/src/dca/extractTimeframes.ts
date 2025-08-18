@@ -1,6 +1,6 @@
 import type { RuleGroupType } from "react-querybuilder";
 
-import { BarSize, isIndicatorValue } from "@opentrader/types";
+import { BarSize, isIndicatorValue } from "@canzatrade/types";
 import { isGroup } from "./utils.js";
 
 export function extractTimeframes(entryConditions: RuleGroupType) {

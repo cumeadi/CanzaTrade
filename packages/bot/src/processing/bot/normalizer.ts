@@ -3,8 +3,8 @@ import {
   Order as StrategyOrder,
   CreateOrder as StrategyCreateOrder,
   CreateTrade as StrategyCreateTrade,
-} from "@opentrader/bot-processor";
-import type { SmartTradeWithOrders, TBot } from "@opentrader/db";
+} from "@canzatrade/bot-processor";
+import type { SmartTradeWithOrders, TBot } from "@canzatrade/db";
 import { Order, Prisma } from "@prisma/client";
 import {
   OrderType,
@@ -15,7 +15,7 @@ import {
   XOrderType,
   XSmartTradeType,
   XTakeProfitType,
-} from "@opentrader/types";
+} from "@canzatrade/types";
 import { nullToUndefined, required } from "../utils/index.js";
 
 export class OrderNormalizer {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { IGridLine } from "@opentrader/types";
+import type { IGridLine } from "@canzatrade/types";
 import { isWaitingGridLine } from "./isWaitingGridLine.js";
 
 const gridLines: IGridLine[] = [

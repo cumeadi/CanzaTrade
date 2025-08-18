@@ -1,1 +1,1 @@
-export * from "@opentrader/bot-processor";
+export * from "@canzatrade/bot-processor";

@@ -1,6 +1,6 @@
-import { findStrategy } from "@opentrader/bot-templates/server";
-import { xprisma } from "@opentrader/db";
-import { logger } from "@opentrader/logger";
+import { findStrategy } from "@canzatrade/bot-templates/server";
+import { xprisma } from "@canzatrade/db";
+import { logger } from "@canzatrade/logger";
 import type { CommandResult } from "../types.js";
 import { readBotConfig, readExchangesConfig } from "../config.js";
 import { createDaemonRpcClient } from "../daemon-rpc.js";

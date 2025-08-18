@@ -30,7 +30,7 @@ import {
   IWatchTradesResponse,
   IOrderbook,
   ITicker,
-} from "@opentrader/types";
+} from "@canzatrade/types";
 import type { Market, Exchange } from "ccxt";
 
 export interface IExchange {

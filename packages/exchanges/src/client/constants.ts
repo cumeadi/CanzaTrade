@@ -1,5 +1,5 @@
 import { pro as ccxt } from "ccxt";
-import { ExchangeCode } from "@opentrader/types";
+import { ExchangeCode } from "@canzatrade/types";
 
 /**
  * Just a guard. Uncomment this to see what exchanges were added or removed from CCXT.

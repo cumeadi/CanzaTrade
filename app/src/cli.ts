@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Repository URL: https://github.com/bludnic/opentrader
+ * Repository URL: https://github.com/bludnic.canzatrade
  */
 
 import { logPath } from "./utils/app-path.js";
@@ -37,9 +37,9 @@ import { addLogsCommand } from "./commands/logs.js";
 const program = new Command();
 
 program
-  .name("@opentrader/cli")
-  .description("CLI for OpenTrader")
-  .version(packageJSON.version, "-v, --version", "Output the OpenTrader version");
+  .name("@canzatrade/cli")
+  .description("CLI for CanzaTrade")
+  .version(packageJSON.version, "-v, --version", "Output the CanzaTrade version");
 
 setPasswordCommand(program);
 addExchangeAccountCommand(program);

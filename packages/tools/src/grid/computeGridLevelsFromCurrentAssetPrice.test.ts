@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { IGridBotLevel } from "@opentrader/types";
+import type { IGridBotLevel } from "@canzatrade/types";
 import { CURRENT_ASSET_PRICE, GRID_LINES, GRID_LEVELS } from "../mocks/grid-bot.js";
 import { calcGridLines } from "./calcGridLines.js";
 import { computeGridLevelsFromCurrentAssetPrice } from "./computeGridLevelsFromCurrentAssetPrice.js";

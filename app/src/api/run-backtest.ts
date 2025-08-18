@@ -1,10 +1,10 @@
 import { pro as ccxt } from "ccxt";
-import { findStrategy } from "@opentrader/bot-templates/server";
-import { Backtesting } from "@opentrader/backtesting";
-import { CCXTCandlesProvider } from "@opentrader/bot";
-import { logger } from "@opentrader/logger";
-import { exchangeCodeMapCCXT } from "@opentrader/exchanges";
-import type { BarSize, ExchangeCode, ICandlestick } from "@opentrader/types";
+import { findStrategy } from "@canzatrade/bot-templates/server";
+import { Backtesting } from "@canzatrade/backtesting";
+import { CCXTCandlesProvider } from "@canzatrade/bot";
+import { logger } from "@canzatrade/logger";
+import { exchangeCodeMapCCXT } from "@canzatrade/exchanges";
+import type { BarSize, ExchangeCode, ICandlestick } from "@canzatrade/types";
 import type { CommandResult } from "../types.js";
 import { readBotConfig } from "../config.js";
 

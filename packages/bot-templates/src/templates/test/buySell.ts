@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { buy, cancelSmartTrade, IBotConfiguration, sell, type TBotContext } from "@opentrader/bot-processor";
-import { logger } from "@opentrader/logger";
+import { buy, cancelSmartTrade, IBotConfiguration, sell, type TBotContext } from "@canzatrade/bot-processor";
+import { logger } from "@canzatrade/logger";
 
 export function* testBuySell(ctx: TBotContext<any>) {
   logger.info("[TestBuySell] Executing strategy template");

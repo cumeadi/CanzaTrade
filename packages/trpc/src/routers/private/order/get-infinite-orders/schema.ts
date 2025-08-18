@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { XOrderStatus } from "@opentrader/types";
+import { XOrderStatus } from "@canzatrade/types";
 
 export const ZGetInfiniteOrdersInputSchema = z.object({
   botId: z.number(),

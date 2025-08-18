@@ -25,7 +25,7 @@ export default defineConfig({
   env: {
     NODE_ENV: "production",
   },
-  noExternal: [/@opentrader/], // Include internal packages into the bundle
+  noExternal: [/@canzatrade/], // Include internal packages into the bundle
   outExtension: ({ format }) => {
     if (format === "esm") return { js: ".mjs" };
     if (format === "cjs") return { js: ".cjs" };

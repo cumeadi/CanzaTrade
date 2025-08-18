@@ -1,4 +1,4 @@
-import type { ICandlestick } from "@opentrader/types";
+import type { ICandlestick } from "@canzatrade/types";
 
 /**
  * Returns highest candlestick by price

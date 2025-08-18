@@ -1,5 +1,5 @@
-import type { Trade } from "@opentrader/bot-processor";
-import { XOrderStatus } from "@opentrader/types";
+import type { Trade } from "@canzatrade/bot-processor";
+import { XOrderStatus } from "@canzatrade/types";
 
 export function fulfilledTable(smartTrades: Trade[]) {
   const rows = smartTrades.flatMap((smartTrade, i) => {

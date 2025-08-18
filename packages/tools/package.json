@@ -1,5 +1,5 @@
 {
-  "name": "@opentrader/tools",
+  "name": "@canzatrade/tools",
   "version": "0.0.0",
   "description": "",
   "type": "module",
@@ -8,7 +8,7 @@
   "author": "bludnic",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@opentrader/tsconfig": "workspace:*",
+    "@canzatrade/tsconfig": "workspace:*",
     "@types/big.js": "^6.2.2",
     "react-querybuilder": "^7.7.1",
     "tsup": "^8.3.5",
@@ -16,7 +16,7 @@
     "vitest": "^3.2.3"
   },
   "dependencies": {
-    "@opentrader/types": "workspace:*",
+    "@canzatrade/types": "workspace:*",
     "big.js": "^7.0.1"
   }
 }

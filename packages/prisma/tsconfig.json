@@ -1,22 +1,22 @@
 {
-  "extends": "@opentrader/tsconfig/module.json",
+  "extends": "@canzatrade/tsconfig/module.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "../../dts/packages/prisma",
     "paths": {
-      "@opentrader/tools": [
+      "@canzatrade/tools": [
         "../tools/src/index.ts"
       ],
-      "@opentrader/tools/*": [
+      "@canzatrade/tools/*": [
         "../tools/src/*"
       ],
-      "@opentrader/tsconfig/*": [
+      "@canzatrade/tsconfig/*": [
         "../tsconfig/*"
       ],
-      "@opentrader/types": [
+      "@canzatrade/types": [
         "../types/src/index.ts"
       ],
-      "@opentrader/types/*": [
+      "@canzatrade/types/*": [
         "../types/src/*"
       ]
     }

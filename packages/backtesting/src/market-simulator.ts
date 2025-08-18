@@ -1,6 +1,6 @@
-import type { Trade } from "@opentrader/bot-processor";
-import { ICandlestick, XOrderStatus } from "@opentrader/types";
-import { format, logger } from "@opentrader/logger";
+import type { Trade } from "@canzatrade/bot-processor";
+import { ICandlestick, XOrderStatus } from "@canzatrade/types";
+import { format, logger } from "@canzatrade/logger";
 
 export class MarketSimulator {
   /**
