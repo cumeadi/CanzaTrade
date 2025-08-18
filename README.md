@@ -1,165 +1,303 @@
-<p align="center">
-  <a href="https://github.com/bludnic/opentrader" title="OpenTrader">
-    <img src=".github/images/logo-dark-rounded.png" alt="OpenTrader logo" width="128" />
-  </a>
-</p>
+# 🚀 CanzaTrade - Professional Trading Platform
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/bludnic/opentrader/dev.yml)](https://github.com/bludnic/opentrader/actions)
-[![NPM Version](https://img.shields.io/npm/v/opentrader?color=blue)](https://www.npmjs.com/package/opentrader)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/bludnic/opentrader)](https://github.com/bludnic/opentrader/graphs/contributors)
-[![Static Badge](https://img.shields.io/badge/Twitter-black?logo=X&color=white&logoColor=black)](https://x.com/intent/follow?screen_name=OpenTraderLabs)
-[![Static Badge](https://img.shields.io/badge/Discord-white?logo=Discord)](https://discord.gg/RS7y3ffvvG)
-[![Static Badge](https://img.shields.io/badge/Reddit-white?logo=Reddit)](https://www.reddit.com/r/OpenTrader)
-[![Static Badge](https://img.shields.io/badge/Telegram-white?logo=Telegram)](https://t.me/+cJLNxLSjcW83Njgy)
+[![Railway](https://img.shields.io/badge/Deploy%20on-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-[OpenTrader](https://github.com/bludnic/opentrader) is a self-hosted cryptocurrency trading bot, featuring built-in and highly customizable strategies, integration with technical indicators, high-frequency trading, and cross-exchange trading with support for 100+ exchanges via CCXT.
+> **CanzaTrade** is a professional, African market-focused trading platform built on the robust OpenTrader foundation. Experience seamless trading with our modern design system and enterprise-grade infrastructure.
 
-**Features:**
+## ✨ Features
 
-- **✨ Robust UI**: A user-friendly interface for managing the bots.
-- **🌐 Multiple Exchanges:** Trade across various cryptocurrency exchanges.
-- **📝 Paper Trading**: Test your strategies without risking real money.
-- **📊 Backtesting:** Backtest your strategies using historical data.
-- **⚙️ Easy Installation:** Install effortlessly via NPM.
+### 🎨 **Modern Design System**
+- **Canza Finance Branding** - Professional navy blue theme with vibrant teal accents
+- **Responsive Dashboard** - Three-column layout optimized for trading workflows
+- **African Markets Focus** - Prioritized display of African currency pairs (NGN/USDT, KES/USDT, GHS/USDT, ZAR/USDT, EGP/USDT)
+- **Accessibility First** - High contrast colors, clear typography, and keyboard navigation
 
-**Strategies:**
+### 💼 **Trading Capabilities**
+- **Multi-Exchange Support** - Connect to multiple cryptocurrency exchanges
+- **Advanced Bot Trading** - Grid bots, DCA strategies, and custom algorithms
+- **Real-time Data** - Live market data, order books, and trade feeds
+- **Portfolio Management** - Comprehensive portfolio tracking and analytics
+- **Risk Management** - Stop-loss, take-profit, and position sizing tools
 
-- ☑️ [GRID](packages/bot-templates/src/templates/grid-bot.ts): Make profits from market fluctuations by creating a grid of buy and sell orders.
-- ☑️ [DCA](packages/bot-templates/src/templates/dca.ts): Entry with multiple orders to average the entry price and sell on price swings.
-- ☑️ [RSI](packages/bot-templates/src/templates/rsi.ts): Places orders based on the RSI indicator value.
-- 🛠️ [CUSTOM](https://github.com/Open-Trader/custom-strategy): Build your own strategy in just a few lines of code.
+### 🏗️ **Technical Excellence**
+- **TypeScript** - Full type safety and modern development experience
+- **Monorepo Architecture** - Efficient package management with Moon
+- **Prisma ORM** - Type-safe database operations and migrations
+- **Docker Ready** - Containerized deployment with Railway
+- **Health Monitoring** - Built-in health checks and monitoring
 
-# 💓 Status of the Project
+## 🚀 Quick Start
 
-This project is a personal passion, developed in my free time. If you find it useful, please give it a ⭐️. Your support means a lot and motivates me to keep improving the bot. If you'd like to make a [donation](#Donate), see the options below. 💖
+### Prerequisites
+- **Node.js 18+** and **pnpm**
+- **Git** for version control
+- **Railway account** for deployment (optional)
 
-# 🍩 Donate
-
-If you find OpenTrader useful and would like to support its development, consider making a donation. Your contributions will help cover the costs of maintaining and improving this project.
-
-**Donate via:**
-
-- **Bitcoin (BTC):** `1LBqWWne1ac455UmUDVF32ozVAhy1HgVXn`
-- **Ethereum (ETH):** `0x60371d49F9Cc7ec7d7e34979D5DD31996B7B43Ff`
-
-Thank you for your support!
-
-# 👋🏻 Join our Community
-
-👥 Connect with developers, request features, and receive support. Join our community on [Discord](https://discord.gg/RS7y3ffvvG).
-
-[![Static Badge](https://img.shields.io/badge/Discord-white?logo=Discord&style=for-the-badge&color=white&logoColor=7289da)](https://discord.gg/RS7y3ffvvG)
-[![Static Badge](https://img.shields.io/badge/Telegram-white?logo=Telegram&style=for-the-badge&color=white)](https://t.me/+cJLNxLSjcW83Njgy)
-[![Static Badge](https://img.shields.io/badge/Reddit-white?logo=Reddit&style=for-the-badge&color=white)](https://www.reddit.com/r/OpenTrader)
-
-🔔 For announcements and updates, follow us on [Twitter](https://twitter.com/intent/follow?screen_name=OpenTraderLabs) and [Telegram](https://t.me/opentrader_pro).
-
-[![Static Badge](https://img.shields.io/badge/Twitter-white?logo=X&style=for-the-badge&color=black)](https://twitter.com/intent/follow?screen_name=OpenTraderLabs)
-[![Static Badge](https://img.shields.io/badge/Telegram-white?logo=Telegram&style=for-the-badge&color=24A1DE&logoColor=white)](https://t.me/opentrader_pro)
-
-# ⚡️ Quick start
-
-Get started with OpenTrader in just a few steps. Follow this quick guide to install, configure, and run your crypto trading bot.
-
-> [!NOTE]
-> OpenTrader requires Node.js v22 or higher. You can check your Node.js version by running `node -v`
-
-## Installation
-
-1. Install OpenTrader globally using npm:
+### Local Development
 
 ```bash
-npm install -g opentrader
+# Clone the repository
+git clone https://github.com/your-username/canzatrade.git
+cd canzatrade
+
+# Install dependencies
+pnpm install
+
+# Set up environment
+cp .env.example .env
+# Edit .env with your configuration
+
+# Run database migrations
+moon run prisma:migrate
+
+# Start development server
+moon run :dev
 ```
 
-2. Set an admin password for later accessing the OpenTrader UI:
+### Railway Deployment (Recommended)
 
 ```bash
-opentrader set-password <password>
+# Deploy to Railway in one command
+./deploy-railway.sh
 ```
 
-3. Start the OpenTrader app
+**Or follow the [3-step quick start guide](RAILWAY_QUICKSTART.md):**
 
-```bash
-opentrader up
+1. **Connect to Railway** - Link your GitHub repository
+2. **Set Environment Variables** - Configure in Railway dashboard  
+3. **Deploy** - Railway handles the rest automatically
+
+## 🎯 What Makes CanzaTrade Special
+
+### 🌍 **African Markets First**
+CanzaTrade is built specifically for African traders and markets:
+
+- **Local Currency Pairs**: NGN/USDT, KES/USDT, GHS/USDT, ZAR/USDT, EGP/USDT
+- **Regional Exchanges**: Optimized for Baki and other African exchanges
+- **Local Time Zones**: African market hours and trading patterns
+- **Cultural Context**: Designed with African trading preferences in mind
+
+### 🎨 **Professional Design System**
+Our cohesive design system ensures a professional, trustworthy experience:
+
+- **Color Palette**: Deep navy blues with vibrant teal accents
+- **Typography**: Inter for headings, Roboto for body text
+- **Components**: Consistent button styles, cards, and form elements
+- **Responsive**: Works seamlessly across all device sizes
+
+### 🚀 **Enterprise-Grade Infrastructure**
+Built for reliability and scale:
+
+- **Health Monitoring**: Automatic health checks and restart policies
+- **Auto-scaling**: Handles traffic spikes automatically
+- **SSL Certificates**: HTTPS enabled by default
+- **Database Management**: Automatic migrations and seeding
+- **Logging & Monitoring**: Comprehensive observability
+
+## 🏗️ Architecture
+
+```
+canzatrade/
+├── app/                          # Main application
+│   ├── frontend/                # React frontend with design system
+│   ├── src/                     # Backend source code
+│   └── bin/                     # CLI and startup scripts
+├── packages/                     # Shared packages
+│   ├── bot/                     # Trading bot engine
+│   ├── db/                      # Database layer
+│   ├── exchanges/               # Exchange integrations
+│   ├── indicators/              # Technical indicators
+│   └── trpc/                    # API layer
+├── Dockerfile.railway           # Railway deployment
+├── railway.json                 # Railway configuration
+└── docs/                        # Documentation
 ```
 
-The app will start the RPC server and listen on port 8000.
+## 🎨 Design System
 
-> **Tip**: Use `opentrader up -d` to start the app as a daemon. To stop it, run `opentrader down`.
+CanzaTrade features a comprehensive design system built for professional trading:
 
-# Usage
-
-## UI
-
-The user interface allows managing multiple bots and strategies, viewing backtest results, and monitoring live trading.
-
-![UI Preview](.github/images/ui.png)
-
-You can access the OpenTrader UI on: http://localhost:8000
-
-## CLI
-
-### Connect an exchange
-
-Copy the `exchanges.sample.json5` file to `exchanges.json5` and add your API keys.
-
-> Available exchanges: OKX, BYBIT, BINANCE, KRAKEN, COINBASE, GATEIO, BITGET
-
-### Choose a strategy
-
-Create the strategy configuration file `config.json5`. We will use the `grid` strategy as an example.
-
-```json5
-{
-  // Grid strategy params
-  settings: {
-    highPrice: 70000, // upper price of the grid
-    lowPrice: 60000, // lower price of the grid
-    gridLevels: 20, // number of grid levels
-    quantityPerGrid: 0.0001, // quantity in base currency per each grid
-  },
-  pair: "BTC/USDT",
-  exchange: "DEFAULT",
+### **Color System**
+```css
+:root {
+  --background-primary: #0A192F;    /* Deep Navy Blue */
+  --background-secondary: #172A45;   /* Lighter Navy */
+  --accent-primary: #64FFDA;        /* Vibrant Teal */
+  --system-success: #00BFA5;        /* Green for profits */
+  --system-error: #FF5252;          /* Red for losses */
 }
 ```
 
-> Currently supported strategies: `grid`, `dca`, `rsi`
+### **Component Library**
+- **Buttons**: Primary, secondary, and tertiary variants
+- **Cards**: Consistent styling with hover effects
+- **Forms**: Professional input styling and validation
+- **Tables**: Clean data presentation
+- **Status Indicators**: Bot status, trade status, alerts
 
-### Run a backtest
+### **Responsive Design**
+- **Desktop**: 3-column dashboard layout
+- **Tablet**: 2-column layout with full-width right column
+- **Mobile**: Single column with optimized spacing
 
-Command: `opentrader backtest <strategy> --from <date> --to <date> -t <timeframe>`
+## 🚀 Deployment Options
 
-Example running a `grid` strategy on `1h` timeframe.
+### **Railway (Recommended)**
+- **Zero Configuration**: Automatic Docker builds
+- **Auto-scaling**: Handles traffic spikes
+- **SSL Certificates**: HTTPS enabled by default
+- **Health Monitoring**: Built-in monitoring and alerts
 
+### **Docker**
 ```bash
-opentrader backtest grid --from 2024-03-01 --to 2024-06-01 -t 1h
+# Build and run locally
+docker build -f Dockerfile.railway -t canzatrade .
+docker run -p 3000:3000 canzatrade
 ```
 
-> To get more accurate results, use a smaller timeframe, e.g. 1m, however, it will take more time to download OHLC data from the exchange.
-
-### Running a Live Trading
-
-Command: `opentrader trade <strategy>`
-
-Example running a live trading with `grid` strategy.
-
+### **Traditional Hosting**
 ```bash
-opentrader trade grid
+# Build the application
+moon run :build
+
+# Start production server
+node app/dist/standalone.mjs
 ```
 
-> To stop the live trading, run `opentrader stop`
+## 📊 Dashboard Features
 
-# Project structure
+### **Left Column - Portfolio & Watchlist**
+- **Portfolio Overview**: Real-time portfolio value and P&L
+- **Watchlist**: African currency pairs with live prices
+- **Quick Actions**: New bot, quick trade, reports
 
-- Strategies dir: [packages/bot-templates](/packages/bot-templates/src/templates)
-- Indicators: [packages/indicators](/packages/indicators/src/indicators)
-- Exchange connectors: [packages/exchanges](/packages/exchanges/src/exchanges)
+### **Center Column - Trading Interface**
+- **Interactive Charts**: Large chart area for technical analysis
+- **Order Entry**: Streamlined buy/sell forms
+- **Market Information**: 24h high/low, volume, market cap
 
-# 🪪 License
+### **Right Column - Management**
+- **Active Bots**: Bot status and performance monitoring
+- **Recent Trades**: Live trade feed with timestamps
+- **Market Alerts**: Price alerts and notifications
 
-Licensed under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) License. See the [LICENSE](LICENSE) file for more information.
+## 🔧 Configuration
 
-# Disclaimer
+### **Environment Variables**
+```bash
+# Required
+NODE_ENV=production
+ADMIN_PASSWORD=your-secure-password
+HOST=0.0.0.0
+PORT=3000
 
-This software is for educational purposes only. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS. Do not risk money that you are afraid to lose. There might be bugs in the code - this software DOES NOT come with ANY warranty.
+# Database (Railway sets this automatically)
+DATABASE_URL=your-database-url
+
+# Optional
+CCXT_VERBOSE=true
+CUSTOM_STRATEGIES_PATH=/app/strategies
+```
+
+### **Database Setup**
+CanzaTrade supports both SQLite and PostgreSQL:
+
+- **SQLite**: Works out of the box (default)
+- **PostgreSQL**: Recommended for production (add as Railway service)
+
+## 📚 Documentation
+
+- **[Design System](DESIGN_SYSTEM.md)** - Complete design system documentation
+- **[Railway Deployment](RAILWAY_DEPLOYMENT.md)** - Comprehensive deployment guide
+- **[Quick Start](RAILWAY_QUICKSTART.md)** - 3-step deployment guide
+- **[API Reference](packages/trpc/README.md)** - API documentation
+
+## 🛠️ Development
+
+### **Available Scripts**
+```bash
+# Development
+moon run :dev              # Start development server
+moon run :build            # Build for production
+moon run :typecheck        # Type checking
+moon run :lint             # Lint code
+
+# Database
+moon run prisma:migrate    # Run migrations
+moon run prisma:generate   # Generate Prisma client
+
+# Deployment
+./deploy-railway.sh        # Deploy to Railway
+```
+
+### **Project Structure**
+- **Monorepo**: Managed with Moon for efficient development
+- **TypeScript**: Full type safety across all packages
+- **Testing**: Comprehensive test suite with Vitest
+- **Linting**: Oxlint for fast, reliable linting
+
+## 🌟 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+### **Development Setup**
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+### **Code Standards**
+- **TypeScript**: Strict type checking enabled
+- **Prettier**: Consistent code formatting
+- **ESLint**: Code quality and style enforcement
+- **Conventional Commits**: Standardized commit messages
+
+## 📄 License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Support
+
+### **Community Resources**
+- **Discord**: [Railway Community](https://discord.gg/railway)
+- **Documentation**: [Railway Docs](https://docs.railway.app/)
+- **Issues**: GitHub Issues for bug reports
+
+### **Getting Help**
+1. **Check Documentation**: Start with the guides above
+2. **Search Issues**: Look for similar problems
+3. **Create Issue**: Provide detailed information
+4. **Community**: Ask in Railway Discord
+
+## 🎉 Acknowledgments
+
+- **OpenTrader Foundation**: Built on the robust OpenTrader platform
+- **Canza Finance**: Brand identity and design inspiration
+- **Railway**: Deployment platform and infrastructure
+- **Open Source Community**: All the amazing tools and libraries
+
+---
+
+## 🚀 Ready to Trade?
+
+**Deploy CanzaTrade to Railway in under 5 minutes:**
+
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app)
+
+**Or start locally:**
+
+```bash
+git clone https://github.com/your-username/canzatrade.git
+cd canzatrade
+./deploy-railway.sh
+```
+
+---
+
+**Built with ❤️ for African markets and global traders**
+
+*CanzaTrade - Professional Trading Platform by Canza Finance*
