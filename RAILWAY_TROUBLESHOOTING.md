@@ -36,7 +36,45 @@ process "/bin/sh -c moon docker scaffold cli" did not complete successfully: exi
    }
    ```
 
-### 2. Build Script Not Found
+### 2. Node.js Version Mismatch
+
+**Error:**
+```
+WARN  Unsupported engine: wanted: {"node":"~22.12"} (current: {"node":"v18.20.8","pnpm":"10.12.1"})
+```
+
+**Cause:** The project requires Node.js 22.12 but Docker is using Node.js 18.
+
+**Solution:** Update Dockerfile to use Node.js 22:
+
+```dockerfile
+# Change from:
+FROM node:18-alpine AS base
+
+# To:
+FROM node:22-alpine AS base
+```
+
+### 3. Lockfile Mismatch
+
+**Error:**
+```
+ERR_PNPM_OUTDATED_LOCKFILE  Cannot install with "frozen-lockfile" because pnpm-lock.yaml is not up to date
+```
+
+**Cause:** The pnpm-lock.yaml file is out of sync with package.json files.
+
+**Solution:** Remove `--frozen-lockfile` flag:
+
+```dockerfile
+# Change from:
+RUN pnpm install --frozen-lockfile
+
+# To:
+RUN pnpm install
+```
+
+### 4. Build Script Not Found
 
 **Error:**
 ```
@@ -48,7 +86,7 @@ process "/bin/sh -c moon docker scaffold cli" did not complete successfully: exi
 RUN npm install -g pnpm
 ```
 
-### 3. Moon Command Not Found
+### 5. Moon Command Not Found
 
 **Error:**
 ```
@@ -68,7 +106,7 @@ The `Dockerfile.railway.simple` avoids Moon complexity:
 
 ```dockerfile
 # Simple approach without Moon docker scaffold
-FROM node:18-alpine AS base
+FROM node:22-alpine AS base
 # ... rest of the simplified Dockerfile
 ```
 
@@ -78,7 +116,7 @@ The updated `Dockerfile.railway` fixes the scaffold issue:
 
 ```dockerfile
 # Fixed approach with proper dependency handling
-FROM node:18-alpine AS base
+FROM node:22-alpine AS base
 # ... rest of the fixed Dockerfile
 ```
 
@@ -176,10 +214,10 @@ ls packages/*/src/
 **Solution:** Use a different base image:
 
 ```dockerfile
-# Instead of node:18-alpine
-FROM node:18-slim
+# Instead of node:22-alpine
+FROM node:22-slim
 # or
-FROM node:18-bullseye
+FROM node:22-bullseye
 ```
 
 ### Permission Issues
@@ -212,6 +250,8 @@ Before deploying to Railway, ensure:
 - [ ] **Dependencies are correct**: All package.json files exist
 - [ ] **Environment variables**: Set in Railway dashboard
 - [ ] **Health endpoint**: `/health` responds correctly
+- [ ] **Node.js version**: Matches project requirements (22.12)
+- [ ] **Lockfile sync**: pnpm-lock.yaml is up to date
 
 ## 🆘 Getting Help
 
