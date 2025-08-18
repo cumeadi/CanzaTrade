@@ -14,37 +14,31 @@ WORKDIR /app
 RUN npm install -g @moonrepo/cli@1.37.2
 RUN npm install -g pnpm
 
-#### SKELETON
-FROM base AS skeleton
+#### DEPENDENCIES
+FROM base AS deps
 
-# Copy entire repository
-COPY . .
+# Copy package files
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY app/package.json ./app/
+COPY packages/*/package.json ./packages/*/
+COPY packages/*/*/package.json ./packages/*/*/
 
-# Copy the minimum of files necessary for installing dependencies
-RUN moon docker scaffold cli
+# Install dependencies
+RUN pnpm install --frozen-lockfile
 
 #### BUILD
 FROM base AS build
 
-# Copy toolchain
-COPY --from=skeleton /root/.proto /root/.proto
-
-# Copy workspace skeleton
-COPY --from=skeleton /app/.moon/docker/workspace .
-# Copy Prisma schema
-COPY --from=skeleton /app/.moon/docker/sources/packages/prisma/src/schema.prisma ./packages/prisma/src/schema.prisma
-
-# Install toolchain and dependencies
-RUN moon docker setup
+# Copy dependencies
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/app/node_modules ./app/node_modules
+COPY --from=deps /app/packages/*/node_modules ./packages/*/node_modules
 
 # Copy source files
-COPY --from=skeleton /app/.moon/docker/sources .
+COPY . .
 
 # Build the application
 RUN moon run cli:build
-
-# Remove unneeded files and folders
-RUN moon docker prune
 
 #### RUNNER
 FROM node:18-alpine AS runner
