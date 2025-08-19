@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "name": "canzatrade",
+  "builds": [
+    {
+      "src": "app/dist/standalone.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/health",
+      "dest": "app/dist/standalone.mjs"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "app/dist/standalone.mjs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "HOST": "0.0.0.0",
+    "PORT": "3000"
+  },
+  "functions": {
+    "app/dist/standalone.mjs": {
+      "maxDuration": 30
+    }
+  }
+}

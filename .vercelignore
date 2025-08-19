@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts
+dist/
+build/
+.next/
+.nuxt/
+
+# Development files
+.env
+.env.local
+.env.*.local
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Moon repo
+.moon/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files
+*.db
+*.sqlite
+
+# Test files
+__tests__/
+*.test.*
+*.spec.*
+
+# Documentation
+*.md
+docs/
+
+# Scripts
+scripts/
+bin/

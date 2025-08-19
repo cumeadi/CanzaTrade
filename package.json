@@ -10,7 +10,9 @@
     "lint": "moon run :lint",
     "typecheck": "moon run :typecheck",
     "prisma:migrate": "moon run prisma:migrate",
-    "prisma:seed": "moon run prisma:seed"
+    "prisma:seed": "moon run prisma:seed",
+    "vercel-build": "npm run build",
+    "vercel-dev": "npm run dev"
   },
   "engines": {
     "node": ">=22.0.0",

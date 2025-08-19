@@ -1,303 +1,196 @@
-# 🚀 CanzaTrade - Professional Trading Platform
+# 🚀 **CanzaTrade - Professional Trading Platform**
 
-[![Railway](https://img.shields.io/badge/Deploy%20on-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+> **CanzaTrade** is a powerful open-source crypto trading bot designed to automate your trading strategies on various cryptocurrency exchanges, with a focus on African markets and stablecoin pairs.
 
-> **CanzaTrade** is a professional, African market-focused trading platform built on the robust CanzaTrade foundation. Experience seamless trading with our modern design system and enterprise-grade infrastructure.
+## ✨ **Features**
 
-## ✨ Features
+### 🎯 **African Market Focus**
+- **Priority watchlist** for African currency pairs (NGN/USDT, KES/USDT, etc.)
+- **Baki exchange integration** for local market access
+- **Stablecoin trading** with African fiat currencies
 
-### 🎨 **Modern Design System**
-- **Canza Finance Branding** - Professional navy blue theme with vibrant teal accents
-- **Responsive Dashboard** - Three-column layout optimized for trading workflows
-- **African Markets Focus** - Prioritized display of African currency pairs (NGN/USDT, KES/USDT, GHS/USDT, ZAR/USDT, EGP/USDT)
-- **Accessibility First** - High contrast colors, clear typography, and keyboard navigation
+### 🏗️ **Architecture**
+- **Monorepo structure** using Moonrepo for efficient package management
+- **Modular design** with separate packages for different functionalities
+- **TypeScript** throughout for type safety and developer experience
+- **Prisma ORM** for database management with SQLite support
 
-### 💼 **Trading Capabilities**
-- **Multi-Exchange Support** - Connect to multiple cryptocurrency exchanges
-- **Advanced Bot Trading** - Grid bots, DCA strategies, and custom algorithms
-- **Real-time Data** - Live market data, order books, and trade feeds
-- **Portfolio Management** - Comprehensive portfolio tracking and analytics
-- **Risk Management** - Stop-loss, take-profit, and position sizing tools
+### 🔧 **Core Components**
+- **Trading Engine** - Automated strategy execution
+- **Market Data** - Real-time price feeds and analysis
+- **Portfolio Management** - Asset tracking and P&L calculation
+- **Bot Templates** - Pre-built trading strategies
+- **Backtesting** - Strategy validation and optimization
 
-### 🏗️ **Technical Excellence**
-- **TypeScript** - Full type safety and modern development experience
-- **Monorepo Architecture** - Efficient package management with Moon
-- **Prisma ORM** - Type-safe database operations and migrations
-- **Docker Ready** - Containerized deployment with Railway
-- **Health Monitoring** - Built-in health checks and monitoring
+## 🚀 **Quick Start**
 
-## 🚀 Quick Start
+### **Prerequisites**
+- Node.js 22+ 
+- pnpm 8+
+- Git
 
-### Prerequisites
-- **Node.js 18+** and **pnpm**
-- **Git** for version control
-- **Railway account** for deployment (optional)
-
-### Local Development
-
+### **Installation**
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/canzatrade.git
-cd canzatrade
+git clone https://github.com/cumeadi/CanzaTrade.git
+cd CanzaTrade
 
 # Install dependencies
 pnpm install
 
-# Set up environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Run database migrations
-moon run prisma:migrate
+# Build the application
+pnpm run build
 
 # Start development server
-moon run :dev
-```
-
-### Railway Deployment (Recommended)
-
-```bash
-# Deploy to Railway in one command
-./deploy-railway.sh
-```
-
-**Or follow the [3-step quick start guide](RAILWAY_QUICKSTART.md):**
-
-1. **Connect to Railway** - Link your GitHub repository
-2. **Set Environment Variables** - Configure in Railway dashboard  
-3. **Deploy** - Railway handles the rest automatically
-
-## 🎯 What Makes CanzaTrade Special
-
-### 🌍 **African Markets First**
-CanzaTrade is built specifically for African traders and markets:
-
-- **Local Currency Pairs**: NGN/USDT, KES/USDT, GHS/USDT, ZAR/USDT, EGP/USDT
-- **Regional Exchanges**: Optimized for Baki and other African exchanges
-- **Local Time Zones**: African market hours and trading patterns
-- **Cultural Context**: Designed with African trading preferences in mind
-
-### 🎨 **Professional Design System**
-Our cohesive design system ensures a professional, trustworthy experience:
-
-- **Color Palette**: Deep navy blues with vibrant teal accents
-- **Typography**: Inter for headings, Roboto for body text
-- **Components**: Consistent button styles, cards, and form elements
-- **Responsive**: Works seamlessly across all device sizes
-
-### 🚀 **Enterprise-Grade Infrastructure**
-Built for reliability and scale:
-
-- **Health Monitoring**: Automatic health checks and restart policies
-- **Auto-scaling**: Handles traffic spikes automatically
-- **SSL Certificates**: HTTPS enabled by default
-- **Database Management**: Automatic migrations and seeding
-- **Logging & Monitoring**: Comprehensive observability
-
-## 🏗️ Architecture
-
-```
-canzatrade/
-├── app/                          # Main application
-│   ├── frontend/                # React frontend with design system
-│   ├── src/                     # Backend source code
-│   └── bin/                     # CLI and startup scripts
-├── packages/                     # Shared packages
-│   ├── bot/                     # Trading bot engine
-│   ├── db/                      # Database layer
-│   ├── exchanges/               # Exchange integrations
-│   ├── indicators/              # Technical indicators
-│   └── trpc/                    # API layer
-├── Dockerfile.railway           # Railway deployment
-├── railway.json                 # Railway configuration
-└── docs/                        # Documentation
-```
-
-## 🎨 Design System
-
-CanzaTrade features a comprehensive design system built for professional trading:
-
-### **Color System**
-```css
-:root {
-  --background-primary: #0A192F;    /* Deep Navy Blue */
-  --background-secondary: #172A45;   /* Lighter Navy */
-  --accent-primary: #64FFDA;        /* Vibrant Teal */
-  --system-success: #00BFA5;        /* Green for profits */
-  --system-error: #FF5252;          /* Red for losses */
-}
-```
-
-### **Component Library**
-- **Buttons**: Primary, secondary, and tertiary variants
-- **Cards**: Consistent styling with hover effects
-- **Forms**: Professional input styling and validation
-- **Tables**: Clean data presentation
-- **Status Indicators**: Bot status, trade status, alerts
-
-### **Responsive Design**
-- **Desktop**: 3-column dashboard layout
-- **Tablet**: 2-column layout with full-width right column
-- **Mobile**: Single column with optimized spacing
-
-## 🚀 Deployment Options
-
-### **Railway (Recommended)**
-- **Zero Configuration**: Automatic Docker builds
-- **Auto-scaling**: Handles traffic spikes
-- **SSL Certificates**: HTTPS enabled by default
-- **Health Monitoring**: Built-in monitoring and alerts
-
-### **Docker**
-```bash
-# Build and run locally
-docker build -f Dockerfile.railway -t canzatrade .
-docker run -p 3000:3000 canzatrade
-```
-
-### **Traditional Hosting**
-```bash
-# Build the application
-moon run :build
-
-# Start production server
-node app/dist/standalone.mjs
-```
-
-## 📊 Dashboard Features
-
-### **Left Column - Portfolio & Watchlist**
-- **Portfolio Overview**: Real-time portfolio value and P&L
-- **Watchlist**: African currency pairs with live prices
-- **Quick Actions**: New bot, quick trade, reports
-
-### **Center Column - Trading Interface**
-- **Interactive Charts**: Large chart area for technical analysis
-- **Order Entry**: Streamlined buy/sell forms
-- **Market Information**: 24h high/low, volume, market cap
-
-### **Right Column - Management**
-- **Active Bots**: Bot status and performance monitoring
-- **Recent Trades**: Live trade feed with timestamps
-- **Market Alerts**: Price alerts and notifications
-
-## 🔧 Configuration
-
-### **Environment Variables**
-```bash
-# Required
-NODE_ENV=production
-ADMIN_PASSWORD=your-secure-password
-HOST=0.0.0.0
-PORT=3000
-
-# Database (Railway sets this automatically)
-DATABASE_URL=your-database-url
-
-# Optional
-CCXT_VERBOSE=true
-CUSTOM_STRATEGIES_PATH=/app/strategies
+pnpm run dev
 ```
 
 ### **Database Setup**
-CanzaTrade supports both SQLite and PostgreSQL:
+```bash
+# Run database migrations
+pnpm run prisma:migrate
 
-- **SQLite**: Works out of the box (default)
-- **PostgreSQL**: Recommended for production (add as Railway service)
+# Seed the database
+pnpm run prisma:seed
+```
 
-## 📚 Documentation
+## 🌐 **Deployment Options**
 
-- **[Design System](DESIGN_SYSTEM.md)** - Complete design system documentation
-- **[Railway Deployment](RAILWAY_DEPLOYMENT.md)** - Comprehensive deployment guide
-- **[Quick Start](RAILWAY_QUICKSTART.md)** - 3-step deployment guide
-- **[API Reference](packages/trpc/README.md)** - API documentation
+### **🚀 Vercel (Recommended)**
+- **Global CDN** for fast worldwide access
+- **Serverless functions** with automatic scaling
+- **Zero configuration** deployment
+- **Continuous deployment** on every push
 
-## 🛠️ Development
+```bash
+# Quick deployment
+./deploy-vercel.sh
+
+# Or manual deployment
+vercel --prod
+```
+
+### **🐳 Docker**
+- **Containerized deployment** for any environment
+- **Multi-stage builds** for optimized images
+- **Environment-specific configurations**
+
+```bash
+# Build Docker image
+docker build -t canzatrade .
+
+# Run container
+docker run -p 3000:3000 canzatrade
+```
+
+### **🖥️ Self-Hosted**
+- **Full control** over infrastructure
+- **Custom environment** configurations
+- **On-premises deployment** options
+
+## 🎨 **Design System**
+
+### **Color Palette**
+- **Primary**: Deep navy blues and dark grays for backgrounds
+- **Text**: White and light gray for high readability
+- **Accents**: Vibrant teal/green for buttons and CTAs
+- **Charts**: Green for positive, red for negative changes
+
+### **Typography**
+- **Headings**: Primary brand font with varied weights
+- **Body Text**: Secondary brand font for optimal readability
+- **Hierarchy**: Clear visual structure with consistent spacing
+
+### **Components**
+- **Trading Interface**: Professional, intuitive design
+- **Dashboard**: Multi-column layout for efficient workflow
+- **Responsive Design**: Optimized for all device sizes
+
+## 📊 **Dashboard Features**
+
+### **Left Column**
+- **Watchlist**: African currency pairs and stablecoins
+- **Portfolio Overview**: Current value, P&L, and allocation
+
+### **Center Column**
+- **Interactive Chart**: Large, detailed trading pair visualization
+- **Order Entry**: Streamlined trading interface
+
+### **Right Column**
+- **Active Bots**: Trading bot status and performance
+- **Recent Trades**: Live feed of executed trades
+
+## ⚙️ **Configuration**
+
+### **Environment Variables**
+```bash
+DATABASE_URL=file:./dev.db
+ADMIN_PASSWORD=canza123
+HOST=0.0.0.0
+PORT=3000
+NODE_ENV=production
+```
+
+### **Database**
+- **SQLite** for development and small deployments
+- **PostgreSQL** support for production scaling
+- **Automatic migrations** and seeding
+
+## 🔧 **Development**
 
 ### **Available Scripts**
 ```bash
-# Development
-moon run :dev              # Start development server
-moon run :build            # Build for production
-moon run :typecheck        # Type checking
-moon run :lint             # Lint code
-
-# Database
-moon run prisma:migrate    # Run migrations
-moon run prisma:generate   # Generate Prisma client
-
-# Deployment
-./deploy-railway.sh        # Deploy to Railway
+pnpm run build          # Build the application
+pnpm run dev            # Start development server
+pnpm run lint           # Run linting
+pnpm run typecheck      # Type checking
+pnpm run test           # Run tests
 ```
 
-### **Project Structure**
-- **Monorepo**: Managed with Moon for efficient development
-- **TypeScript**: Full type safety across all packages
-- **Testing**: Comprehensive test suite with Vitest
-- **Linting**: Oxlint for fast, reliable linting
+### **Package Structure**
+```
+packages/
+├── backtesting/        # Strategy backtesting engine
+├── bot/               # Core trading bot functionality
+├── bot-processor/     # Bot execution engine
+├── bot-templates/     # Pre-built trading strategies
+├── db/                # Database models and migrations
+├── exchanges/         # Exchange integrations
+├── indicators/        # Technical analysis indicators
+├── logger/            # Logging system
+├── prisma/            # Database ORM
+├── tools/             # Utility functions
+├── trpc/              # API layer
+├── tsconfig/          # TypeScript configuration
+└── types/             # Type definitions
+```
 
-## 🌟 Contributing
+## 📚 **Documentation**
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+- **[Design System](./DESIGN_SYSTEM.md)** - Complete design guidelines
+- **[Vercel Deployment](./VERCEL_DEPLOYMENT.md)** - Deployment guide
+- **[API Reference](./docs/api.md)** - API documentation
+- **[Contributing](./CONTRIBUTING.md)** - Development guidelines
 
-### **Development Setup**
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## 🤝 **Contributing**
 
-### **Code Standards**
-- **TypeScript**: Strict type checking enabled
-- **Prettier**: Consistent code formatting
-- **ESLint**: Code quality and style enforcement
-- **Conventional Commits**: Standardized commit messages
+We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details on:
 
-## 📄 License
+- **Code Style** and standards
+- **Testing** requirements
+- **Pull Request** process
+- **Issue Reporting** guidelines
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+## 📄 **License**
 
-## 🤝 Support
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
-### **Community Resources**
-- **Discord**: [Railway Community](https://discord.gg/railway)
-- **Documentation**: [Railway Docs](https://docs.railway.app/)
-- **Issues**: GitHub Issues for bug reports
+## 🙏 **Acknowledgments**
 
-### **Getting Help**
-1. **Check Documentation**: Start with the guides above
-2. **Search Issues**: Look for similar problems
-3. **Create Issue**: Provide detailed information
-4. **Community**: Ask in Railway Discord
-
-## 🎉 Acknowledgments
-
-- **CanzaTrade Foundation**: Built on the robust CanzaTrade platform
-- **Canza Finance**: Brand identity and design inspiration
-- **Railway**: Deployment platform and infrastructure
-- **Open Source Community**: All the amazing tools and libraries
+- **Canza Finance** for the vision and branding
+- **OpenTrader** for the original trading platform foundation
+- **Open Source Community** for the amazing tools and libraries
 
 ---
 
-## 🚀 Ready to Trade?
-
-**Deploy CanzaTrade to Railway in under 5 minutes:**
-
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app)
-
-**Or start locally:**
-
-```bash
-git clone https://github.com/your-username/canzatrade.git
-cd canzatrade
-./deploy-railway.sh
-```
-
----
-
-**Built with ❤️ for African markets and global traders**
-
-*CanzaTrade - Professional Trading Platform by Canza Finance*
+**Built with ❤️ for African markets and global traders** 🚀
