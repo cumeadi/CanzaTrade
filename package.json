@@ -25,5 +25,6 @@
   ],
   "devDependencies": {
     "@moonrepo/cli": "^1.25.0"
-  }
+  },
+  "main": "app/dist/standalone.mjs"
 }
