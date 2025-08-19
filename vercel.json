@@ -1,5 +1,33 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "app/frontend/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/app/frontend/assets/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/dashboard",
+      "dest": "/app/frontend/canza-dashboard-new.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app/frontend/index.html"
+    }
+  ],
   "env": {
     "NODE_ENV": "production",
     "HOST": "0.0.0.0",
