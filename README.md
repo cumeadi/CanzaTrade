@@ -5,7 +5,7 @@
 ## ✨ **Features**
 
 ### 🎯 **African Market Focus**
-- **Priority watchlist** for African currency pairs (NGN/USDT, KES/USDT, etc.)
+- **Priority watchlist** for African currency pairs (NGN/USDT, KES/USDT, GHS/USDT, ZAR/USDT, EGP/USDT)
 - **Baki exchange integration** for local market access
 - **Stablecoin trading** with African fiat currencies
 
@@ -56,10 +56,11 @@ pnpm run prisma:seed
 
 ## 🌐 **Deployment Options**
 
-### **🚀 Vercel (Recommended)**
+### **🚀 Vercel (Recommended & Live)**
+- **✅ LIVE NOW**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app
 - **Global CDN** for fast worldwide access
 - **Serverless functions** with automatic scaling
-- **Zero configuration** deployment
+- **Full trading UI** deployed and accessible
 - **Continuous deployment** on every push
 
 ```bash
@@ -119,6 +120,21 @@ docker run -p 3000:3000 canzatrade
 ### **Right Column**
 - **Active Bots**: Trading bot status and performance
 - **Recent Trades**: Live feed of executed trades
+
+## 🌍 **Live Platform Access**
+
+### **Production URLs**
+- **Main Trading Platform**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app
+- **Dashboard**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app/dashboard
+- **API Status**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app/api
+- **Health Check**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app/api/health
+
+### **What's Live Now**
+- ✅ **Full Trading UI** - Complete CanzaTrade platform
+- ✅ **African Market Dashboard** - Currency pairs and portfolio
+- ✅ **Professional Design** - Canza Finance branding
+- ✅ **Responsive Interface** - Works on all devices
+- ✅ **API Endpoints** - Health monitoring and status
 
 ## ⚙️ **Configuration**
 
@@ -192,5 +208,14 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICE
 - **Open Source Community** for the amazing tools and libraries
 
 ---
+
+## 🎉 **Ready to Trade!**
+
+**Your CanzaTrade platform is now live and accessible worldwide!**
+
+- **Visit**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app
+- **Dashboard**: https://canzatrade-mldpx1xv7-chika-umeadi-s-projects.vercel.app/dashboard
+- **Start trading** with African currency pairs
+- **Manage your portfolio** with professional tools
 
 **Built with ❤️ for African markets and global traders** 🚀
