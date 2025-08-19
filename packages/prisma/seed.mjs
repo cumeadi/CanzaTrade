@@ -26,7 +26,7 @@ async function main() {
     },
     update: {},
     create: {
-      email: "onboarding@opentrader.pro",
+      email: "onboarding@canzatrade.com",
       displayName: "Open Trader",
       role: "Admin",
     },

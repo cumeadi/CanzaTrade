@@ -192,7 +192,7 @@ model Bot {
   logging Boolean @default(true)
 
   // Template name that will be executed by the bot
-  // e.g. `gridBot`, see templates in @opentrader/templates
+  // e.g. `gridBot`, see templates in @canzatrade/templates
   template String
 
   // Bot template will be executed at the candle close of specified timeframe.

@@ -1,4 +1,4 @@
-# PRO version of OpenTrader
+# PRO version of CanzaTrade
 # You must have access to the private repository to build this image
 # https://github.com/bludnic/opentrader-pro
 

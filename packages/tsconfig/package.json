@@ -1,7 +1,7 @@
 {
   "name": "@canzatrade/tsconfig",
   "version": "0.0.0",
-  "description": "TypeScript configuration from OpenTrader",
+  "description": "TypeScript configuration from CanzaTrade",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Open-Trader/canzatrade.git"

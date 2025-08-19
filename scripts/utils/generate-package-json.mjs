@@ -20,7 +20,7 @@ export function generatePackageJson(outDir) {
   // Function to merge dependencies, excluding specified packages
   const mergeDependencies = (source, target) => {
     for (const [key, value] of Object.entries(source)) {
-      if (!key.startsWith("@opentrader/")) {
+      if (!key.startsWith("@canzatrade/")) {
         if (!target[key]) {
           target[key] = value;
         } else if (target[key] !== value) {
